@@ -25,8 +25,9 @@
         header {
             background: linear-gradient(to right, #005f92, #0099cc);
             text-align: center;
-            padding: 60px 20px;
+            padding: 50px 20px;
             color: white;
+            position: relative;
         }
 
         header h1 {
@@ -42,8 +43,6 @@
 
         /* Navigation */
         nav {
-            display: flex;
-            justify-content: center;
             margin-top: 20px;
         }
 
@@ -51,6 +50,7 @@
             list-style: none;
             padding: 0;
             display: flex;
+            justify-content: center;
             gap: 15px;
         }
 
@@ -94,24 +94,23 @@
     <header>
         <h1>Ardit Koka</h1>
         <p>PhD Candidate in Macroeconomics, Monetary Policy, Banking</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lectures.html">Lectures</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="container">
         <section class="welcome">
             <h2>Welcome</h2>
-            <p>I am a PhD candidate with a strong research focus on **Macroeconomics, Monetary Policy, Central Bank Digital Currency (CBDC), Banking, and Money**. My work aims to contribute to the understanding of financial systems, the evolving role of central banks, and the implications of digital currency innovations in modern economies.</p>
-            <p>I hold a **Master’s degree in International Economics and Commerce** from **Università Politecnica delle Marche**, where I developed a deep understanding of global economic dynamics, trade policies, and financial markets. My academic background equips me with a strong analytical foundation to explore key economic issues related to monetary policy and banking stability.</p>
+            <p>I am a PhD candidate with a strong research focus on Macroeconomics, Monetary Policy, Central Bank Digital Currency (CBDC), Banking, and Money. My work aims to contribute to the understanding of financial systems, the evolving role of central banks, and the implications of digital currency innovations in modern economies.</p>
+            <p>I hold a Master’s degree in International Economics and Commerce from Università Politecnica delle Marche, where I developed a deep understanding of global economic dynamics, trade policies, and financial markets. My academic background equips me with a strong analytical foundation to explore key economic issues related to monetary policy and banking stability.</p>
         </section>
-
-        <nav>
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#lectures">Lectures</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#announcements">Announcements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </div>
 </body>
 </html>
