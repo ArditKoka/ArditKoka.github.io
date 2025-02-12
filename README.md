@@ -100,6 +100,31 @@
             height: auto;
             border-radius: 10px;
         }
+
+        /* Contact Section */
+        .contact {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h2 {
+            color: #005f92;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+        }
+
+        .contact-box {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -123,6 +148,18 @@
             <p>I hold a Master’s degree in International Economics and Commerce from Università Politecnica delle Marche, where I developed a deep understanding of global economic dynamics, trade policies, and financial markets. My academic background equips me with a strong analytical foundation to explore key economic issues related to monetary policy and banking stability.</p>
         </div>
         <img src="profile.jpg" alt="Ardit Koka" class="profile-img">
+    </div>
+
+    <div class="container contact">
+        <h2>Contact Details</h2>
+        <div class="contact-box">
+            Via Monte Generoso 71,<br>
+            Varese 21100, Italy<br>
+            Università degli Studi dell'Insubria<br>
+            Dipartimento di Economia<br>
+            Dipartimento di Eccellenza
+        </div>
+        <p>Email: <a href="mailto:akoka@uninsubria.it">akoka@uninsubria.it</a></p>
     </div>
 </body>
 </html>
