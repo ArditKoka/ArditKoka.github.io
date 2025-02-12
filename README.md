@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="Ardit Koka - PhD Candidate in Macroeconomics, Monetary Policy, CBDC, Banking & Money.">
+<meta name="keywords" content="Ardit Koka, Macroeconomics, Monetary Policy, Central Bank Digital Currency, PhD">
+<meta name="author" content="Ardit Koka">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ardit Koka - PhD Candidate</title>
