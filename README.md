@@ -13,7 +13,7 @@
             background-color: #f5f5f5;
             color: #333;
         }
-
+        
         .container {
             width: 80%;
             max-width: 1000px;
