@@ -22,7 +22,7 @@
             </nav>
             <div class="social-links">
                 <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                <a href="mailto:your.email@example.com">Email</a>
+                <a href="mailto:akoka@uninsubria.it">Email</a>
             </div>
         </aside>
         <main>
