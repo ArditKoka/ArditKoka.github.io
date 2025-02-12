@@ -18,13 +18,14 @@
             width: 80%;
             max-width: 1000px;
             margin: 0 auto;
+            text-align: center;
         }
 
         /* Header Styling */
         header {
             background: linear-gradient(to right, #005f92, #0099cc);
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
             color: white;
         }
 
@@ -72,45 +73,20 @@
             color: white;
         }
 
-        /* Content Sections */
-        section {
+        /* Welcome Section */
+        .welcome {
+            text-align: center;
             padding: 50px 20px;
             background-color: white;
-            margin: 20px 0;
+            margin: 20px auto;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
-            color: #005f92;
-            font-size: 2rem;
-        }
-
-        /* Two Column Layout */
-        .profile-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
-        }
-
-        .profile-container img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #005f92;
-        }
-
-        /* Contact Info */
-        .contact-links a {
-            color: #005f92;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-links a:hover {
-            text-decoration: underline;
+        .welcome p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 20px auto;
         }
     </style>
 </head>
@@ -118,48 +94,24 @@
     <header>
         <h1>Ardit Koka</h1>
         <p>PhD Candidate in Macroeconomics, Monetary Policy, Banking</p>
+    </header>
+
+    <div class="container">
+        <section class="welcome">
+            <h2>Welcome</h2>
+            <p>I am a PhD candidate with a strong research focus on **Macroeconomics, Monetary Policy, Central Bank Digital Currency (CBDC), Banking, and Money**. My work aims to contribute to the understanding of financial systems, the evolving role of central banks, and the implications of digital currency innovations in modern economies.</p>
+            <p>I hold a **Master’s degree in International Economics and Commerce** from **Università Politecnica delle Marche**, where I developed a deep understanding of global economic dynamics, trade policies, and financial markets. My academic background equips me with a strong analytical foundation to explore key economic issues related to monetary policy and banking stability.</p>
+        </section>
+
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">Home</a></li>
                 <li><a href="#lectures">Lectures</a></li>
                 <li><a href="#cv">CV</a></li>
                 <li><a href="#announcements">Announcements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
-
-    <div class="container">
-        <section id="about" class="profile-container">
-            <div>
-                <h2>About Me</h2>
-                <p>I am a PhD candidate specializing in Macroeconomics, Monetary Policy, Central Bank Digital Currency (CBDC), Banking, and Money...</p>
-            </div>
-            <img src="profile.jpg" alt="Ardit Koka">
-        </section>
-
-        <section id="lectures">
-            <h2>Lectures</h2>
-            <p>Find details about my lectures and courses here.</p>
-        </section>
-
-        <section id="cv">
-            <h2>Curriculum Vitae</h2>
-            <a href="cv.pdf" target="_blank">Download CV (PDF)</a>
-        </section>
-
-        <section id="announcements">
-            <h2>Announcements</h2>
-            <p>Stay updated with recent news, conferences, and publications.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-links">
-                <p>Email: <a href="mailto:akoka@uninsubria.it">akoka@uninsubria.it</a></p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">View Profile</a></p>
-            </div>
-        </section>
     </div>
 </body>
 </html>
