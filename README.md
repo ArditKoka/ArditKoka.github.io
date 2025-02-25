@@ -128,42 +128,34 @@
         </div>
         
         <div id="home" class="tab-content active">
-            <h2>About Me</h2>
-            <p>I am a Ph.D. Candidate in Methods and Models for Economic Decisions at the University of Insubria. I am currently a Lecturer in Statistics at the University of Milan and an Honorary Fellow at the University of Insubria.</p>
+            <h2>Welcome</h2>
+            <p>I am a Ph.D. Candidate in Methods and Models for Economic Decisions at the University of Insubria. Previously, I worked as an auditor for Deloitte. I hold a Master's degree in International Economics and Commerce from Università Politecnica delle Marche. My research focuses on Macroeconomics, Monetary Economics, Central Bank Digital Currency, Money, and Banking.</p>
+            <h2>Contact Details</h2>
+            <p>Via Monte Generoso, 71<br>21100 Varese VA<br>Italy</p>
+            <p>Email: <a href="mailto:akoka@uninsubria.it">akoka@uninsubria.it</a></p>
         </div>
         
         <div id="research" class="tab-content">
             <h2>Research Interests</h2>
             <p>Macroeconomics, Monetary Economics, DSGE Models, and Central Bank Digital Currencies.</p>
+            <h2>Working Papers</h2>
         </div>
         
         <div id="teaching" class="tab-content">
             <h2>Teaching</h2>
-            <p>Lecturer in Statistics at the University of Milan and a member of the Examining Committee at the University of Insubria.</p>
-        </div>
-        
-        <div id="cv" class="tab-content">
-            <h2>Curriculum Vitae</h2>
-            <p>Download my full CV below:</p>
-            <a href="#" style="background-color: var(--primary-color); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Download CV (PDF)</a>
+            <h3>Courses</h3>
+            <p>Statistics - Università degli Studi di Milano</p>
+            <h3>Member of the Examination Committee and Tutor for the Following Courses - Department of Economics - University of Insubria</h3>
+            <ul>
+                <li>Macroeconomics</li>
+                <li>Monetary and Credit Economics</li>
+                <li>Statistics</li>
+                <li>Mathematics</li>
+                <li>Mathematics for Finance</li>
+            </ul>
+            <h3>Talks, Seminars, Open Lectures</h3>
+            <p>From Crypto Currencies to Central Bank Digital Currencies - Guest Lecturer Postgraduate Course in Monetary and Credit Economics - 30/04/2024 - University of Insubria</p>
         </div>
     </main>
-    
-    <script>
-        function openTab(evt, tabName) {
-            var tabContents = document.getElementsByClassName("tab-content");
-            for (var i = 0; i < tabContents.length; i++) {
-                tabContents[i].classList.remove("active");
-            }
-            
-            var tabs = document.getElementsByClassName("tab");
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove("active");
-            }
-            
-            document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
-        }
-    </script>
 </body>
 </html>
