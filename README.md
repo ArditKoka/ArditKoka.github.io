@@ -110,10 +110,10 @@
     <header>
         <div class="container">
             <div class="profile">
-                <img src="/api/placeholder/200/200" alt="Ardit Koka" class="profile-img">
+                <img src="Photo" alt="Ardit Koka" class="profile-img">
                 <div class="profile-info">
                     <h1>Ardit Koka</h1>
-                   <div class="subtitle">Ph.D. Candidate in Methods and Models for Economic Decisions</div>
+                    <div class="subtitle">Ph.D. Candidate in <a href="https://www.phd.eco.uninsubria.it/methods-and-models-for-economic-decisions/phd-students/" target="_blank">Methods and Models for Economic Decisions</a></div>
                 </div>
             </div>
         </div>
