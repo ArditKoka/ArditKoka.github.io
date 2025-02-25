@@ -238,9 +238,8 @@
                 <img src="/api/placeholder/200/200" alt="Ardit Koka" class="profile-img">
                 <div class="profile-info">
                     <h1>Ardit Koka</h1>
-                    <div class="subtitle">Ph.D. Candidate in Macroeconomics, Monetary Policy, Banking</div>
-                    <div>Lecturer in Statistics at Università degli Studi di Milano</div>
-                    <div>Honorary Fellow at Università degli Studi dell'Insubria</div>
+                    <div class="subtitle">Ph.D. Candidate in Methods and Models for Economic Decisions</div>
+                   
                     
                     <div class="contact-info">
                         <a href="mailto:akoka@uninsubria.it">
@@ -299,18 +298,10 @@
                 <h2>Interessi di Ricerca</h2>
                 
                 <div class="research-interest">
-                    <h3>Macroeconomia</h3>
-                    <p>Focus su modelli DSGE, stima Bayesiana e identificazione empirica di shock macroeconomici.</p>
-                </div>
-                
-                <div class="research-interest">
-                    <h3>Economia Monetaria</h3>
-                    <p>Studio delle valute digitali delle banche centrali (CBDC) con particolare attenzione al caso dell'Euro digitale.</p>
-                </div>
-                
-                <div class="research-interest">
-                    <h3>Modelli New Keynesian</h3>
-                    <p>Applicazione di modelli New Keynesian in economie aperte.</p>
+                    <p>Macroeconomia</p>
+                    <p>Economia Monetaria</p>
+                    <p>Modelli New Keynesian</p>
+
                 </div>
             </section>
             
