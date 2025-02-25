@@ -113,7 +113,7 @@
                 <img src="/api/placeholder/200/200" alt="Ardit Koka" class="profile-img">
                 <div class="profile-info">
                     <h1>Ardit Koka</h1>
-                   <div class="subtitle">Ph.D. Candidate in <a href="https://www.phd.eco.uninsubria.it/methods-and-models-for-economic-decisions/phd-students/" target="_blank">Methods and Models for Economic Decisions</a></div>
+                   <div class="subtitle">Ph.D. Candidate in Methods and Models for Economic Decisions</div>
                 </div>
             </div>
         </div>
@@ -129,7 +129,7 @@
         
         <div id="home" class="tab-content active">
             <h2>Welcome</h2>
-            <p>I am a Ph.D. Candidate in Methods and Models for Economic Decisions at the University of Insubria. Previously, I worked as an auditor for Deloitte. I hold a Master's degree in International Economics and Commerce from Università Politecnica delle Marche. My research focuses on Macroeconomics, Monetary Economics, Central Bank Digital Currency, Money, and Banking.</p>
+            <p>I am a Ph.D. Candidate in <a href="https://www.phd.eco.uninsubria.it/methods-and-models-for-economic-decisions/phd-students/" target="_blank">Methods and Models for Economic Decisions</a> at the University of Insubria. Previously, I worked as an auditor for Deloitte. I hold a Master's degree in International Economics and Commerce from Università Politecnica delle Marche. My research focuses on Macroeconomics, Monetary Economics, Central Bank Digital Currency, Money, and Banking.</p>
             <h2>Contact Details</h2>
             <p>Via Monte Generoso, 71<br>21100 Varese VA<br>Italy</p>
             <p>Email: <a href="mailto:akoka@uninsubria.it">akoka@uninsubria.it</a></p>
