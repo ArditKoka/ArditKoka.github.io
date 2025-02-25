@@ -313,33 +313,29 @@
                     <p>Analisi del potenziale impatto dell'introduzione dell'Euro digitale sul sistema bancario dell'Eurozona, con particolare attenzione agli aspetti relativi alla stabilità finanziaria.</p>
                 </div>
                 
-                <div class="card">
-                    <h3>Innovation Camp for PhD Students (Progetto Vincitore 2024)</h3>
-                    <p>Sviluppo di un modello innovativo per l'analisi delle politiche monetarie in un contesto di digitalizzazione del sistema finanziario.</p>
-                </div>
-            </section>
-        </div>
+             
         
         <!-- Teaching Section -->
         <div id="teaching" class="tab-content">
             <section>
-                <h2>Insegnamento</h2>
+                <h2>Teaching</h2>
                 
                 <div class="card">
-                    <h3>Corsi</h3>
+                    <h3>Courses</h3>
                     <ul>
                         <li><strong>Statistica</strong> - Università degli Studi di Milano</li>
-                        <li><strong>Esercitazioni di Macroeconomia</strong> - Università degli Studi dell'Insubria</li>
-                        <li><strong>Supporto didattico in Matematica per l'Economia</strong> - Università degli Studi dell'Insubria</li>
-                    </ul>
+                         </ul>
                 </div>
                 
                 <div class="card">
-                    <h3>Attività Accademica</h3>
+                    <h3>Member of the Examining Committee Department of Economics- University of Insubria</h3>
                     <ul>
-                        <li>Membro della commissione d'esame come Honorary Fellow</li>
-                        <li>Tutoraggio individuale per studenti in discipline economiche e statistiche</li>
-                        <li>Supervisione di gruppi di studio per corsi di base e avanzati</li>
+                        <li>Macroeconomics</li>
+                        <li>Statistics</li>
+                        <li>Mathermatics</li>
+                        <li>Mathematics for Finance</li>
+                        <li>Macroeconomics</li>
+                       
                     </ul>
                 </div>
                 
