@@ -157,5 +157,18 @@
             <p>From Crypto Currencies to Central Bank Digital Currencies - Guest Lecturer Postgraduate Course in Monetary and Credit Economics - 30/04/2024 - University of Insubria</p>
         </div>
     </main>
+    
+    <script>
+        function openTab(evt, tabName) {
+            var tabContents = document.querySelectorAll(".tab-content");
+            tabContents.forEach(content => content.classList.remove("active"));
+            
+            var tabs = document.querySelectorAll(".tab");
+            tabs.forEach(tab => tab.classList.remove("active"));
+            
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 </body>
 </html>
