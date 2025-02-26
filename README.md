@@ -63,6 +63,44 @@
             color: var(--text-color);
             background-color: #f9f9f9;
         }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid var(--primary-color);
+            margin-bottom: 2rem;
+        }
+        
+        .tab {
+            padding: 1rem 2rem;
+            cursor: pointer;
+            background-color: #e1e5e9;
+            color: var(--dark-color);
+            font-weight: 600;
+            border: none;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-right: 0.5rem;
+            transition: all 0.3s;
+        }
+        
+        .tab.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -89,31 +127,6 @@
         <div id="home" class="tab-content active">
             <h2>Welcome</h2>
             <p>I am a Ph.D. Candidate in <a href="https://www.phd.eco.uninsubria.it/methods-and-models-for-economic-decisions/phd-students/" target="_blank">Methods and Models for Economic Decisions</a> at the University of Insubria. Previously, I worked as an auditor for Deloitte. My research focuses on Macroeconomics, Monetary Economics, Central Bank Digital Currency, Money, and Banking.</p>
-            <h2>Contact Details</h2>
-            <p>Via Monte Generoso, 71<br>21100 Varese VA<br>Italy</p>
-            <p>Email: <a href="mailto:akoka@uninsubria.it">akoka@uninsubria.it</a></p>
-        </div>
-        
-        <div id="research" class="tab-content">
-            <h2>Research Interests</h2>
-            <p>Macroeconomics, Monetary Economics, DSGE Models, and Central Bank Digital Currencies.</p>
-            <h2>Working Papers</h2>
-        </div>
-        
-        <div id="teaching" class="tab-content">
-            <h2>Teaching</h2>
-            <h3>Courses</h3>
-            <p>Statistics - Università degli Studi di Milano</p>
-            <h3>Member of the Examination Committee and Tutor for the Following Courses - Department of Economics - University of Insubria</h3>
-            <ul>
-                <li>Macroeconomics</li>
-                <li>Monetary and Credit Economics</li>
-                <li>Statistics</li>
-                <li>Mathematics</li>
-                <li>Mathematics for Finance</li>
-            </ul>
-            <h3>Talks, Seminars, Open Lectures</h3>
-            <p>From Crypto Currencies to Central Bank Digital Currencies - Guest Lecturer Postgraduate Course in Monetary and Credit Economics - 30/04/2024 - University of Insubria</p>
         </div>
     </main>
     
