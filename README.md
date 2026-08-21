@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ardit Koka | Academic Website</title>
+    <title>Ardit Koka | Economics</title>
 
     <meta
         name="description"
-        content="Academic website of Ardit Koka, PhD Candidate in Methods and Models for Economic Decisions at the University of Insubria. Research in macroeconomics, monetary economics, banking and central bank digital currencies."
+        content="Academic website of Ardit Koka, PhD Candidate at the University of Insubria. Research in macroeconomics, monetary economics, banking, monetary policy and central bank digital currencies."
     >
 
     <style>
@@ -17,10 +17,10 @@
             --primary-color: #006699;
             --primary-dark: #004d73;
             --accent-color: #2980b9;
-            --text-color: #2f3740;
+            --text-color: #333333;
             --muted-color: #66727c;
             --white: #ffffff;
-            --page-bg: #f7f9fb;
+            --page-bg: #f9f9f9;
         }
 
         * {
@@ -49,72 +49,73 @@
         }
 
         .container {
-            max-width: 1050px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 18px;
         }
 
         header {
             background-color: var(--primary-color);
             color: var(--white);
-            padding: 42px 0;
-            border-bottom: 4px solid var(--primary-dark);
+            padding: 40px 0;
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--primary-dark);
         }
 
         .profile {
             display: flex;
             align-items: center;
-            gap: 32px;
+            gap: 40px;
         }
 
         .profile-img {
-            width: 170px;
-            height: 170px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid var(--white);
-            box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
+            border: 5px solid var(--white);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-info {
+            flex: 1;
         }
 
         .profile-info h1 {
-            font-size: clamp(2rem, 5vw, 3rem);
-            line-height: 1.15;
-            margin-bottom: 10px;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
         }
 
         .profile-info .subtitle {
-            font-size: 1.15rem;
+            font-size: 1.3rem;
             opacity: 0.95;
-            max-width: 720px;
+            margin-bottom: 8px;
         }
 
-        main {
-            padding-top: 30px;
-            padding-bottom: 60px;
+        .profile-info .institution {
+            font-size: 1.05rem;
+            opacity: 0.9;
         }
 
         .tabs {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
             border-bottom: 2px solid var(--primary-color);
-            margin-bottom: 28px;
+            margin-bottom: 30px;
         }
 
         .tab {
-            padding: 12px 22px;
+            padding: 15px 32px;
             cursor: pointer;
-            background-color: #e4e9ed;
-            color: var(--text-color);
+            background-color: #e1e5e9;
+            color: #23364d;
             font: inherit;
-            font-weight: 650;
+            font-weight: 600;
             border: none;
-            border-radius: 6px 6px 0 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-right: 10px;
             transition: background-color 0.2s ease, color 0.2s ease;
-        }
-
-        .tab:hover {
-            background-color: #d6dee4;
         }
 
         .tab.active {
@@ -122,17 +123,13 @@
             color: var(--white);
         }
 
-        .tab:focus-visible {
-            outline: 3px solid rgba(41, 128, 185, 0.35);
-            outline-offset: 2px;
+        .tab:hover:not(.active) {
+            background-color: #d1d7de;
         }
 
         .tab-content {
             display: none;
-            background-color: var(--white);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 3px 16px rgba(0, 0, 0, 0.06);
+            padding: 8px 18px 50px;
         }
 
         .tab-content.active {
@@ -141,18 +138,23 @@
 
         h2 {
             color: var(--primary-dark);
-            font-size: 1.65rem;
-            margin: 0 0 14px;
+            font-size: 1.75rem;
+            margin-bottom: 14px;
         }
 
         h2:not(:first-child) {
-            margin-top: 30px;
+            margin-top: 34px;
         }
 
         h3 {
             color: var(--primary-color);
-            font-size: 1.12rem;
-            margin: 24px 0 8px;
+            font-size: 1.15rem;
+            margin-top: 24px;
+            margin-bottom: 7px;
+        }
+
+        p {
+            max-width: 1000px;
         }
 
         p + p {
@@ -160,37 +162,78 @@
         }
 
         ul {
-            padding-left: 24px;
             margin-top: 10px;
+            padding-left: 25px;
         }
 
-        .research-list {
-            margin-top: 8px;
+        li {
+            margin-bottom: 8px;
         }
 
-        .cv-button {
-            display: inline-block;
+        .research-interests {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .paper {
+            margin-top: 16px;
+        }
+
+        .paper-title {
+            font-size: 1.08rem;
+            font-weight: 700;
+        }
+
+        .presentation {
+            margin-bottom: 22px;
+        }
+
+        .presentation-title {
+            font-weight: 700;
+        }
+
+        .presentation-place {
+            color: #4f5d68;
+        }
+
+        .role {
+            margin-bottom: 25px;
+        }
+
+        .role-title {
+            font-weight: 700;
+            font-size: 1.08rem;
+        }
+
+        .role-place {
+            color: #4f5d68;
+            margin-bottom: 6px;
+        }
+
+        .contact-links {
             margin-top: 15px;
-            padding: 10px 16px;
-            background-color: var(--primary-color);
-            color: var(--white);
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 650;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
         }
 
-        .cv-button:hover {
-            background-color: var(--primary-dark);
+        .contact-links a {
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
         }
 
         footer {
             text-align: center;
             color: var(--muted-color);
-            padding: 22px 0 35px;
+            padding: 25px 0 35px;
             font-size: 0.9rem;
         }
 
-        @media (max-width: 680px) {
+        @media (max-width: 700px) {
             header {
                 padding: 30px 0;
             }
@@ -198,26 +241,39 @@
             .profile {
                 flex-direction: column;
                 text-align: center;
-                gap: 18px;
+                gap: 20px;
             }
 
             .profile-img {
-                width: 145px;
-                height: 145px;
+                width: 160px;
+                height: 160px;
+            }
+
+            .profile-info h1 {
+                font-size: 2.2rem;
+            }
+
+            .profile-info .subtitle {
+                font-size: 1.1rem;
             }
 
             .tabs {
-                gap: 4px;
+                gap: 5px;
             }
 
             .tab {
-                flex: 1 1 calc(50% - 4px);
-                text-align: center;
-                padding: 11px 10px;
+                flex: 1;
+                margin-right: 0;
+                padding: 13px 15px;
             }
 
             .tab-content {
-                padding: 22px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .contact-links {
+                justify-content: center;
             }
         }
     </style>
@@ -228,6 +284,7 @@
     <header>
         <div class="container">
             <div class="profile">
+
                 <img
                     src="Photo.jpeg"
                     alt="Ardit Koka"
@@ -235,12 +292,19 @@
                 >
 
                 <div class="profile-info">
+
                     <h1>Ardit Koka</h1>
 
                     <div class="subtitle">
-                        PhD Candidate in Methods and Models for Economic Decisions
+                        PhD Candidate in Economics
                     </div>
+
+                    <div class="institution">
+                        Methods and Models for Economic Decisions · University of Insubria
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </header>
@@ -286,17 +350,6 @@
                 Teaching
             </button>
 
-            <button
-                class="tab"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                aria-controls="cv"
-                data-tab="cv"
-            >
-                CV
-            </button>
-
         </nav>
 
         <section
@@ -320,15 +373,24 @@
             </p>
 
             <p>
-                Previously, I worked as an auditor for Deloitte.
-                I hold a Master's degree in International Economics and Commerce
-                from Università Politecnica delle Marche.
+                My research focuses on macroeconomics, monetary economics,
+                money and banking, financial intermediation, central bank digital
+                currencies, and monetary-policy transmission.
             </p>
 
             <p>
-                My research focuses on macroeconomics, monetary economics,
-                central bank digital currencies, money and banking,
-                and monetary-policy transmission.
+                From September 2025 to May 2026, I was a Visiting PhD Researcher
+                at Lancaster University Management School, where I developed my
+                research in an international academic environment and participated
+                in seminars, workshops, and research discussions.
+            </p>
+
+            <h2>Current Academic Activities</h2>
+
+            <p>
+                Alongside my doctoral research, I teach Statistics at
+                Università degli Studi di Milano and serve as Cultore della Materia
+                and Academic Tutor at the University of Insubria.
             </p>
 
             <h2>Contact</h2>
@@ -336,16 +398,24 @@
             <p>
                 Department of Economics<br>
                 University of Insubria<br>
-                Via Monte Generoso, 71<br>
-                21100 Varese, Italy
+                Varese, Italy
             </p>
 
-            <p>
-                Email:
+            <div class="contact-links">
+
                 <a href="mailto:akoka@uninsubria.it">
-                    akoka@uninsubria.it
+                    Email
                 </a>
-            </p>
+
+                <a
+                    href="https://www.linkedin.com/in/arditkoka"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+            </div>
 
         </section>
 
@@ -357,22 +427,73 @@
 
             <h2>Research Interests</h2>
 
-            <p>
-                Macroeconomics, monetary economics, money and banking,
-                DSGE models, central bank digital currencies,
-                financial intermediation and monetary-policy transmission.
+            <p class="research-interests">
+                Macroeconomics · Monetary Economics · Money and Banking ·
+                Financial Intermediation · Central Bank Digital Currencies ·
+                Monetary Policy Transmission · DSGE Models
             </p>
 
             <h2>Working Papers</h2>
 
-            <ul class="research-list">
-                <li>
-                    <strong>
-                        When Funding Neutrality Fails:
-                        CBDC, Refinancing, and Prudential Liquidity
-                    </strong>
-                </li>
-            </ul>
+            <div class="paper">
+                <div class="paper-title">
+                    When Funding Neutrality Fails: CBDC, Refinancing, and Prudential Liquidity
+                </div>
+            </div>
+
+            <h2>Presentations & Seminars</h2>
+
+            <div class="presentation">
+
+                <div class="presentation-title">
+                    CBDC and Monetary Policy Transmission:
+                    A Two-Tier Design with Bank Intermediation Frictions
+                </div>
+
+                <div class="presentation-place">
+                    SoFiE Summer School and Conference on Structural Macro Modelling
+                </div>
+
+                <div>
+                    National Bank of Belgium, Brussels · May 2026
+                </div>
+
+            </div>
+
+            <div class="presentation">
+
+                <div class="presentation-title">
+                    CBDC and Monetary Policy Transmission:
+                    A Two-Tier Design with Bank Intermediation Frictions
+                </div>
+
+                <div class="presentation-place">
+                    Departmental Research Presentation, Department of Economics
+                </div>
+
+                <div>
+                    Lancaster University · 18 May 2026
+                </div>
+
+            </div>
+
+            <h2>Invited & Guest Lectures</h2>
+
+            <div class="presentation">
+
+                <div class="presentation-title">
+                    From Cryptocurrencies to Central Bank Digital Currencies
+                </div>
+
+                <div class="presentation-place">
+                    Postgraduate Course in Monetary and Credit Economics
+                </div>
+
+                <div>
+                    University of Insubria · 30 April 2024
+                </div>
+
+            </div>
 
         </section>
 
@@ -384,56 +505,59 @@
 
             <h2>Teaching</h2>
 
-            <h3>Università degli Studi di Milano</h3>
+            <div class="role">
 
-            <p>
-                Statistics
-            </p>
+                <div class="role-title">
+                    Lecturer in Statistics
+                </div>
 
-            <h3>
-                University of Insubria — Examination Committees and Tutoring
-            </h3>
+                <div class="role-place">
+                    Università degli Studi di Milano · October 2024 – Present
+                </div>
+
+                <p>
+                    Teaching Statistics to large undergraduate cohorts, covering
+                    probability, estimation, statistical inference, hypothesis testing,
+                    and regression.
+                </p>
+
+            </div>
+
+            <div class="role">
+
+                <div class="role-title">
+                    Cultore della Materia and Academic Tutor
+                </div>
+
+                <div class="role-place">
+                    University of Insubria · 2024 – Present
+                </div>
+
+                <p>
+                    Member of examination committees and provider of individual
+                    and group academic support across economics and quantitative subjects.
+                </p>
+
+            </div>
+
+            <h3>Examination Committees</h3>
 
             <ul>
                 <li>Macroeconomics</li>
                 <li>Monetary and Credit Economics</li>
                 <li>Statistics</li>
                 <li>Mathematics</li>
-                <li>Mathematics for Finance</li>
+                <li>Mathematics for Economics and Finance</li>
             </ul>
 
-            <h3>Talks, Seminars, and Open Lectures</h3>
+            <h3>Academic Tutoring</h3>
 
             <p>
-                <em>
-                    From Cryptocurrencies to Central Bank Digital Currencies
-                </em>
-                — Guest lecture, postgraduate course in Monetary and Credit Economics,
-                University of Insubria, 30 April 2024.
+                Tutoring activities have included economics, statistics,
+                probability, mathematics, quantitative methods, and applied statistics
+                across undergraduate and postgraduate programmes at the University
+                of Insubria.
             </p>
-
-        </section>
-
-        <section
-            id="cv"
-            class="tab-content"
-            role="tabpanel"
-        >
-
-            <h2>Curriculum Vitae</h2>
-
-            <p>
-                A PDF version of my curriculum vitae is available below.
-            </p>
-
-            <a
-                class="cv-button"
-                href="cv/Ardit_Koka_CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Open CV
-            </a>
 
         </section>
 
