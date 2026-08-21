@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="google-site-verification" content="0hJ8jug-XxHPrRFzH_mslLafvPpysxxd8O42VJ3PwuM">
@@ -9,7 +8,7 @@
 
     <meta
         name="description"
-        content="Academic website of Ardit Koka, PhD Candidate at the University of Insubria. Research in macroeconomics, monetary economics, banking, monetary policy and central bank digital currencies."
+        content="Academic website of Ardit Koka, PhD Candidate at the University of Insubria. Research in macroeconomics, monetary economics, banking, financial intermediation and central bank digital currencies."
     >
 
     <style>
@@ -42,10 +41,6 @@
 
         a {
             color: var(--accent-color);
-        }
-
-        a:hover {
-            text-decoration-thickness: 2px;
         }
 
         .container {
@@ -143,14 +138,14 @@
         }
 
         h2:not(:first-child) {
-            margin-top: 36px;
+            margin-top: 38px;
         }
 
         h3 {
             color: var(--primary-color);
             font-size: 1.15rem;
             margin-top: 25px;
-            margin-bottom: 7px;
+            margin-bottom: 8px;
         }
 
         p {
@@ -163,7 +158,8 @@
 
         ul {
             margin-top: 10px;
-            padding-left: 25px;
+            padding-left: 24px;
+            max-width: 1000px;
         }
 
         li {
@@ -176,27 +172,26 @@
         }
 
         .paper {
-            margin-top: 16px;
             max-width: 1000px;
         }
 
         .paper-title {
-            font-size: 1.14rem;
+            font-size: 1.17rem;
             font-weight: 700;
             color: #25384b;
         }
 
         .paper-status {
             color: var(--primary-color);
+            font-size: 0.96rem;
             font-weight: 600;
-            font-size: 0.95rem;
-            margin-top: 4px;
-            margin-bottom: 15px;
+            margin-top: 5px;
+            margin-bottom: 18px;
         }
 
         .abstract-label {
             font-weight: 700;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
         .abstract {
@@ -223,20 +218,21 @@
             margin-top: 1px;
         }
 
-        .role {
-            margin-bottom: 28px;
+        .teaching-block {
+            margin-bottom: 32px;
             max-width: 1000px;
         }
 
-        .role-title {
+        .teaching-title {
+            font-size: 1.12rem;
             font-weight: 700;
-            font-size: 1.08rem;
+            color: #25384b;
         }
 
-        .role-place {
+        .teaching-institution {
             color: #4f5d68;
             margin-top: 2px;
-            margin-bottom: 7px;
+            margin-bottom: 10px;
         }
 
         .contact-links {
@@ -253,6 +249,16 @@
 
         .contact-links a:hover {
             text-decoration: underline;
+        }
+
+        .cv-box {
+            max-width: 720px;
+        }
+
+        .cv-status {
+            margin-top: 12px;
+            color: var(--primary-color);
+            font-weight: 600;
         }
 
         footer {
@@ -291,7 +297,7 @@
             }
 
             .tab {
-                flex: 1;
+                flex: 1 1 calc(50% - 5px);
                 margin-right: 0;
                 padding: 13px 15px;
             }
@@ -303,10 +309,6 @@
 
             .abstract {
                 text-align: left;
-            }
-
-            .contact-links {
-                justify-content: center;
             }
         }
     </style>
@@ -355,7 +357,6 @@
                 type="button"
                 role="tab"
                 aria-selected="true"
-                aria-controls="home"
                 data-tab="home"
             >
                 Home
@@ -366,7 +367,6 @@
                 type="button"
                 role="tab"
                 aria-selected="false"
-                aria-controls="research"
                 data-tab="research"
             >
                 Research
@@ -377,10 +377,19 @@
                 type="button"
                 role="tab"
                 aria-selected="false"
-                aria-controls="teaching"
                 data-tab="teaching"
             >
                 Teaching
+            </button>
+
+            <button
+                class="tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-tab="cv"
+            >
+                CV
             </button>
 
         </nav>
@@ -407,9 +416,10 @@
 
             <p>
                 My research lies at the intersection of macroeconomics,
-                monetary economics, banking, and digital finance, with a particular
-                focus on central bank digital currencies, financial intermediation,
-                prudential liquidity, and monetary-policy transmission.
+                monetary economics, banking, and digital finance. I am particularly
+                interested in central bank digital currencies, bank funding and
+                financial intermediation, prudential liquidity regulation, and
+                monetary-policy transmission.
             </p>
 
             <p>
@@ -474,22 +484,25 @@
                 </div>
 
                 <p class="abstract">
-                    We study whether central-bank refinancing can neutralise the
-                    bank-credit effects of deposit displacement caused by a capped,
-                    non-remunerated CBDC. In a nonlinear New Keynesian model with an
-                    occasionally binding prudential-liquidity requirement, deposits
-                    and refinancing differ through deposit-stock liquidity needs,
-                    settlement-flow runoff and refinancing-induced net liquidity
-                    transformation. One-for-one refinancing exactly restores funding
-                    quantity but need not restore credit. An exact matched-path
-                    identity characterises the prudential credit gap and shows why
-                    the refinancing ratio consistent with credit equivalence is
-                    state dependent. Quantitatively, the credit-minimising replacement
-                    ratio can lie above, at, or below one depending on the liquidity
-                    regime and stress persistence. Credit stabilisation and welfare
-                    can also select different refinancing intensities. The results
-                    imply that funding neutrality is an accounting benchmark, not a
-                    sufficient condition for prudential credit neutrality.
+                    This paper studies whether central-bank refinancing can neutralise
+                    the bank-credit effects of deposit displacement caused by a capped,
+                    non-remunerated retail CBDC. I develop a nonlinear New Keynesian
+                    model with cash, bank deposits, CBDC, central-bank refinancing,
+                    marketable liquid assets, and an occasionally binding
+                    prudential-liquidity requirement. One-for-one refinancing restores
+                    the quantity of bank funding exactly, but does not generally
+                    preserve bank credit because deposits and central-bank borrowing
+                    have different implications for prudential liquidity. The
+                    credit-minimising refinancing ratio can therefore lie above, at,
+                    or below one-for-one depending on the net liquidity transformation
+                    generated by refinancing and the persistence of liquidity stress.
+                    Quantitatively, one-for-one refinancing is nearly credit-neutral
+                    under short-lived stress when refinancing generates sufficient
+                    prudential liquidity, but remains materially non-neutral when
+                    liquidity stress persists. Moreover, the refinancing ratio that
+                    best stabilises credit need not maximise welfare. Replacing the
+                    quantity of deposits displaced by CBDC is therefore not sufficient
+                    to guarantee equivalence in bank intermediation.
                 </p>
 
             </div>
@@ -538,7 +551,8 @@
                 </div>
 
                 <div class="presentation-event">
-                    Workshop on Applied Economic Methods · PhD Programme in Methods and Models for Economic Decisions
+                    Workshop on Applied Economic Methods ·
+                    PhD Programme in Methods and Models for Economic Decisions
                 </div>
 
                 <div class="presentation-location">
@@ -573,59 +587,104 @@
             role="tabpanel"
         >
 
-            <h2>Teaching & Academic Roles</h2>
+            <h2>Teaching</h2>
 
-            <div class="role">
+            <div class="teaching-block">
 
-                <div class="role-title">
-                    Lecturer in Statistics
+                <div class="teaching-title">
+                    Statistics
                 </div>
 
-                <div class="role-place">
-                    Università degli Studi di Milano · October 2024 – Present
+                <div class="teaching-institution">
+                    Università degli Studi di Milano
                 </div>
 
                 <p>
-                    Teaching Statistics to more than 300 undergraduate students,
-                    covering probability, estimation, statistical inference,
-                    hypothesis testing, and regression.
+                    Teaching and exercise sessions for undergraduate Statistics,
+                    with a focus on developing quantitative reasoning and structured
+                    problem-solving skills.
+                </p>
+
+                <ul>
+                    <li>Probability and random variables</li>
+                    <li>Sampling distributions and estimation</li>
+                    <li>Confidence intervals</li>
+                    <li>Hypothesis testing</li>
+                    <li>Correlation and regression</li>
+                    <li>Problem-solving sessions and exam preparation</li>
+                    <li>Preparation of exercises and assessment materials</li>
+                </ul>
+
+            </div>
+
+            <div class="teaching-block">
+
+                <div class="teaching-title">
+                    Economics and Quantitative Methods
+                </div>
+
+                <div class="teaching-institution">
+                    University of Insubria
+                </div>
+
+                <p>
+                    Teaching support, examination activities, and academic tutoring
+                    across economics and quantitative courses. As an Honorary Fellow,
+                    I participate in university examination committees and support
+                    teaching activities in several undergraduate and postgraduate
+                    courses.
+                </p>
+
+                <ul>
+                    <li>Macroeconomics</li>
+                    <li>Monetary and Credit Economics</li>
+                    <li>Statistics and Applied Statistics</li>
+                    <li>Probability</li>
+                    <li>Mathematics</li>
+                    <li>Mathematics for Economics and Finance</li>
+                    <li>Quantitative methods</li>
+                </ul>
+
+            </div>
+
+            <div class="teaching-block">
+
+                <div class="teaching-title">
+                    Academic Tutoring
+                </div>
+
+                <div class="teaching-institution">
+                    University of Insubria
+                </div>
+
+                <p>
+                    Individual and group tutoring focused on problem solving,
+                    clarification of theoretical and quantitative concepts,
+                    guided exercises, study methods, and preparation for university
+                    examinations.
                 </p>
 
             </div>
 
-            <div class="role">
+        </section>
 
-                <div class="role-title">
-                    Honorary Fellow and Examination Committee Member
-                </div>
+        <section
+            id="cv"
+            class="tab-content"
+            role="tabpanel"
+        >
 
-                <div class="role-place">
-                    University of Insubria · March 2024 – Present
-                </div>
+            <div class="cv-box">
 
-                <p>
-                    Member of university examination committees in Macroeconomics,
-                    Monetary and Credit Economics, Statistics, Mathematics, and
-                    Mathematics for Economics and Finance.
-                </p>
-
-            </div>
-
-            <div class="role">
-
-                <div class="role-title">
-                    Academic Tutor
-                </div>
-
-                <div class="role-place">
-                    University of Insubria · February 2024 – Present
-                </div>
+                <h2>Curriculum Vitae</h2>
 
                 <p>
-                    Individual and group tutoring across economics and quantitative
-                    subjects, including statistics, probability, mathematics,
-                    macroeconomics, quantitative methods, and applied statistics.
+                    My academic curriculum vitae will be available here shortly.
                 </p>
+
+                <div class="cv-status">
+                    Academic CV coming soon
+                </div>
 
             </div>
 
@@ -677,7 +736,8 @@
             activateTab(initialTab, false);
         }
 
-        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
     </script>
 
 </body>
