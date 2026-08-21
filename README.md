@@ -143,13 +143,13 @@
         }
 
         h2:not(:first-child) {
-            margin-top: 34px;
+            margin-top: 36px;
         }
 
         h3 {
             color: var(--primary-color);
             font-size: 1.15rem;
-            margin-top: 24px;
+            margin-top: 25px;
             margin-bottom: 7px;
         }
 
@@ -177,27 +177,55 @@
 
         .paper {
             margin-top: 16px;
+            max-width: 1000px;
         }
 
         .paper-title {
-            font-size: 1.08rem;
+            font-size: 1.14rem;
             font-weight: 700;
+            color: #25384b;
+        }
+
+        .paper-status {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-top: 4px;
+            margin-bottom: 15px;
+        }
+
+        .abstract-label {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .abstract {
+            color: #40484f;
+            text-align: justify;
         }
 
         .presentation {
-            margin-bottom: 22px;
+            margin-bottom: 24px;
+            max-width: 1000px;
         }
 
         .presentation-title {
             font-weight: 700;
+            font-size: 1.04rem;
         }
 
-        .presentation-place {
+        .presentation-event {
             color: #4f5d68;
+            margin-top: 3px;
+        }
+
+        .presentation-location {
+            margin-top: 1px;
         }
 
         .role {
-            margin-bottom: 25px;
+            margin-bottom: 28px;
+            max-width: 1000px;
         }
 
         .role-title {
@@ -207,7 +235,8 @@
 
         .role-place {
             color: #4f5d68;
-            margin-bottom: 6px;
+            margin-top: 2px;
+            margin-bottom: 7px;
         }
 
         .contact-links {
@@ -270,6 +299,10 @@
             .tab-content {
                 padding-left: 5px;
                 padding-right: 5px;
+            }
+
+            .abstract {
+                text-align: left;
             }
 
             .contact-links {
@@ -358,7 +391,7 @@
             role="tabpanel"
         >
 
-            <h2>Welcome</h2>
+            <h2>About</h2>
 
             <p>
                 I am a PhD Candidate in
@@ -373,24 +406,15 @@
             </p>
 
             <p>
-                My research focuses on macroeconomics, monetary economics,
-                money and banking, financial intermediation, central bank digital
-                currencies, and monetary-policy transmission.
+                My research lies at the intersection of macroeconomics,
+                monetary economics, banking, and digital finance, with a particular
+                focus on central bank digital currencies, financial intermediation,
+                prudential liquidity, and monetary-policy transmission.
             </p>
 
             <p>
                 From September 2025 to May 2026, I was a Visiting PhD Researcher
-                at Lancaster University Management School, where I developed my
-                research in an international academic environment and participated
-                in seminars, workshops, and research discussions.
-            </p>
-
-            <h2>Current Academic Activities</h2>
-
-            <p>
-                Alongside my doctoral research, I teach Statistics at
-                Università degli Studi di Milano and serve as Cultore della Materia
-                and Academic Tutor at the University of Insubria.
+                at Lancaster University Management School.
             </p>
 
             <h2>Contact</h2>
@@ -404,7 +428,7 @@
             <div class="contact-links">
 
                 <a href="mailto:akoka@uninsubria.it">
-                    Email
+                    akoka@uninsubria.it
                 </a>
 
                 <a
@@ -430,15 +454,44 @@
             <p class="research-interests">
                 Macroeconomics · Monetary Economics · Money and Banking ·
                 Financial Intermediation · Central Bank Digital Currencies ·
-                Monetary Policy Transmission · DSGE Models
+                Monetary Policy Transmission · Financial Stability · DSGE Models
             </p>
 
             <h2>Working Papers</h2>
 
             <div class="paper">
+
                 <div class="paper-title">
                     When Funding Neutrality Fails: CBDC, Refinancing, and Prudential Liquidity
                 </div>
+
+                <div class="paper-status">
+                    Working paper · Manuscript available soon
+                </div>
+
+                <div class="abstract-label">
+                    Abstract
+                </div>
+
+                <p class="abstract">
+                    We study whether central-bank refinancing can neutralise the
+                    bank-credit effects of deposit displacement caused by a capped,
+                    non-remunerated CBDC. In a nonlinear New Keynesian model with an
+                    occasionally binding prudential-liquidity requirement, deposits
+                    and refinancing differ through deposit-stock liquidity needs,
+                    settlement-flow runoff and refinancing-induced net liquidity
+                    transformation. One-for-one refinancing exactly restores funding
+                    quantity but need not restore credit. An exact matched-path
+                    identity characterises the prudential credit gap and shows why
+                    the refinancing ratio consistent with credit equivalence is
+                    state dependent. Quantitatively, the credit-minimising replacement
+                    ratio can lie above, at, or below one depending on the liquidity
+                    regime and stress persistence. Credit stabilisation and welfare
+                    can also select different refinancing intensities. The results
+                    imply that funding neutrality is an accounting benchmark, not a
+                    sufficient condition for prudential credit neutrality.
+                </p>
+
             </div>
 
             <h2>Presentations & Seminars</h2>
@@ -450,12 +503,12 @@
                     A Two-Tier Design with Bank Intermediation Frictions
                 </div>
 
-                <div class="presentation-place">
+                <div class="presentation-event">
                     SoFiE Summer School and Conference on Structural Macro Modelling
                 </div>
 
-                <div>
-                    National Bank of Belgium, Brussels · May 2026
+                <div class="presentation-location">
+                    National Bank of Belgium · Brussels · May 2026
                 </div>
 
             </div>
@@ -467,12 +520,29 @@
                     A Two-Tier Design with Bank Intermediation Frictions
                 </div>
 
-                <div class="presentation-place">
-                    Departmental Research Presentation, Department of Economics
+                <div class="presentation-event">
+                    Departmental Research Presentation · Department of Economics
                 </div>
 
-                <div>
+                <div class="presentation-location">
                     Lancaster University · 18 May 2026
+                </div>
+
+            </div>
+
+            <div class="presentation">
+
+                <div class="presentation-title">
+                    CBDC and Monetary Policy Transmission:
+                    A Two-Tier Design with Bank Intermediation Frictions
+                </div>
+
+                <div class="presentation-event">
+                    Workshop on Applied Economic Methods · PhD Programme in Methods and Models for Economic Decisions
+                </div>
+
+                <div class="presentation-location">
+                    Department of Economics, University of Insubria · 13 May 2026
                 </div>
 
             </div>
@@ -485,11 +555,11 @@
                     From Cryptocurrencies to Central Bank Digital Currencies
                 </div>
 
-                <div class="presentation-place">
+                <div class="presentation-event">
                     Postgraduate Course in Monetary and Credit Economics
                 </div>
 
-                <div>
+                <div class="presentation-location">
                     University of Insubria · 30 April 2024
                 </div>
 
@@ -503,7 +573,7 @@
             role="tabpanel"
         >
 
-            <h2>Teaching</h2>
+            <h2>Teaching & Academic Roles</h2>
 
             <div class="role">
 
@@ -516,9 +586,9 @@
                 </div>
 
                 <p>
-                    Teaching Statistics to large undergraduate cohorts, covering
-                    probability, estimation, statistical inference, hypothesis testing,
-                    and regression.
+                    Teaching Statistics to more than 300 undergraduate students,
+                    covering probability, estimation, statistical inference,
+                    hypothesis testing, and regression.
                 </p>
 
             </div>
@@ -526,38 +596,38 @@
             <div class="role">
 
                 <div class="role-title">
-                    Cultore della Materia and Academic Tutor
+                    Honorary Fellow and Examination Committee Member
                 </div>
 
                 <div class="role-place">
-                    University of Insubria · 2024 – Present
+                    University of Insubria · March 2024 – Present
                 </div>
 
                 <p>
-                    Member of examination committees and provider of individual
-                    and group academic support across economics and quantitative subjects.
+                    Member of university examination committees in Macroeconomics,
+                    Monetary and Credit Economics, Statistics, Mathematics, and
+                    Mathematics for Economics and Finance.
                 </p>
 
             </div>
 
-            <h3>Examination Committees</h3>
+            <div class="role">
 
-            <ul>
-                <li>Macroeconomics</li>
-                <li>Monetary and Credit Economics</li>
-                <li>Statistics</li>
-                <li>Mathematics</li>
-                <li>Mathematics for Economics and Finance</li>
-            </ul>
+                <div class="role-title">
+                    Academic Tutor
+                </div>
 
-            <h3>Academic Tutoring</h3>
+                <div class="role-place">
+                    University of Insubria · February 2024 – Present
+                </div>
 
-            <p>
-                Tutoring activities have included economics, statistics,
-                probability, mathematics, quantitative methods, and applied statistics
-                across undergraduate and postgraduate programmes at the University
-                of Insubria.
-            </p>
+                <p>
+                    Individual and group tutoring across economics and quantitative
+                    subjects, including statistics, probability, mathematics,
+                    macroeconomics, quantitative methods, and applied statistics.
+                </p>
+
+            </div>
 
         </section>
 
