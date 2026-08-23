@@ -25,6 +25,8 @@
             --muted-color: #66727c;
             --white: #ffffff;
             --page-bg: #f9f9f9;
+            --soft-blue: #eef6fa;
+            --soft-border: #c9e0eb;
         }
 
         * {
@@ -53,32 +55,32 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1050px;
             margin: 0 auto;
-            padding: 0 18px;
+            padding: 0 22px;
         }
 
         header {
             background-color: var(--primary-color);
             color: var(--white);
-            padding: 40px 0;
-            margin-bottom: 32px;
+            padding: 38px 0;
+            margin-bottom: 30px;
             border-bottom: 1px solid var(--primary-dark);
         }
 
         .profile {
             display: flex;
             align-items: center;
-            gap: 40px;
+            gap: 34px;
         }
 
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 172px;
+            height: 172px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid var(--white);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 4px solid var(--white);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
         }
 
         .profile-info {
@@ -86,15 +88,15 @@
         }
 
         .profile-info h1 {
-            font-size: 2.8rem;
+            font-size: 2.75rem;
             line-height: 1.15;
             margin-bottom: 8px;
         }
 
         .profile-info .subtitle {
             font-size: 1.3rem;
-            opacity: 0.95;
-            margin-bottom: 8px;
+            opacity: 0.96;
+            margin-bottom: 7px;
         }
 
         .profile-info .institution {
@@ -110,7 +112,7 @@
         }
 
         .tab {
-            padding: 15px 32px;
+            padding: 14px 30px;
             cursor: pointer;
             background-color: #e1e5e9;
             color: #23364d;
@@ -119,7 +121,7 @@
             border: none;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            margin-right: 10px;
+            margin-right: 8px;
             transition: background-color 0.2s ease, color 0.2s ease;
         }
 
@@ -139,7 +141,7 @@
 
         .tab-content {
             display: none;
-            padding: 8px 18px 50px;
+            padding: 8px 12px 50px;
         }
 
         .tab-content.active {
@@ -148,37 +150,20 @@
 
         h2 {
             color: var(--primary-dark);
-            font-size: 1.75rem;
+            font-size: 1.7rem;
             margin-bottom: 14px;
         }
 
         h2:not(:first-child) {
-            margin-top: 38px;
-        }
-
-        h3 {
-            color: var(--primary-color);
-            font-size: 1.15rem;
-            margin-top: 25px;
-            margin-bottom: 8px;
+            margin-top: 36px;
         }
 
         p {
-            max-width: 1000px;
+            max-width: 930px;
         }
 
         p + p {
             margin-top: 14px;
-        }
-
-        ul {
-            margin-top: 10px;
-            padding-left: 24px;
-            max-width: 1000px;
-        }
-
-        li {
-            margin-bottom: 8px;
         }
 
         .research-interests {
@@ -187,7 +172,7 @@
         }
 
         .paper {
-            max-width: 1000px;
+            max-width: 930px;
         }
 
         .paper-title {
@@ -215,8 +200,8 @@
         }
 
         .presentation {
-            margin-bottom: 24px;
-            max-width: 1000px;
+            margin-bottom: 23px;
+            max-width: 930px;
         }
 
         .presentation-title {
@@ -234,8 +219,8 @@
         }
 
         .teaching-block {
-            max-width: 1000px;
-            margin-bottom: 32px;
+            max-width: 930px;
+            margin-bottom: 30px;
         }
 
         .teaching-title {
@@ -247,7 +232,37 @@
 
         .teaching-institution {
             color: #4f5d68;
-            margin-bottom: 10px;
+            margin-bottom: 9px;
+        }
+
+        .student-note {
+            max-width: 930px;
+            margin-top: 34px;
+            padding: 18px 20px;
+            background-color: var(--soft-blue);
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .student-note strong {
+            color: var(--primary-dark);
+        }
+
+        .student-emails {
+            margin-top: 9px;
+        }
+
+        .student-emails div {
+            margin-top: 4px;
+        }
+
+        .student-emails a {
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .student-emails a:hover {
+            text-decoration: underline;
         }
 
         .contact-links {
@@ -292,12 +307,12 @@
             .profile {
                 flex-direction: column;
                 text-align: center;
-                gap: 20px;
+                gap: 18px;
             }
 
             .profile-img {
-                width: 160px;
-                height: 160px;
+                width: 150px;
+                height: 150px;
             }
 
             .profile-info h1 {
@@ -319,8 +334,8 @@
             }
 
             .tab-content {
-                padding-left: 5px;
-                padding-right: 5px;
+                padding-left: 3px;
+                padding-right: 3px;
             }
 
             .abstract {
@@ -356,7 +371,7 @@
                     </div>
 
                     <div class="institution">
-                        Methods and Models for Economic Decisions · University of Insubria
+                        Department of Economics · University of Insubria
                     </div>
 
                 </div>
@@ -439,10 +454,9 @@
 
             <p>
                 My research lies at the intersection of macroeconomics,
-                monetary economics, banking, and digital finance.
-                I am particularly interested in central bank digital currencies,
-                bank funding and financial intermediation, prudential liquidity
-                regulation, financial stability, and monetary-policy transmission.
+                monetary economics, banking, and digital finance, with a particular
+                focus on central bank digital currencies, bank funding and financial
+                intermediation, prudential liquidity, and monetary-policy transmission.
             </p>
 
             <p>
@@ -485,9 +499,8 @@
             <h2>Research Interests</h2>
 
             <p class="research-interests">
-                Macroeconomics · Monetary Economics · Money and Banking ·
-                Financial Intermediation · Central Bank Digital Currencies ·
-                Monetary Policy Transmission · Financial Stability · DSGE Models
+                Macroeconomics · Monetary Economics · Banking & Financial Intermediation ·
+                Central Bank Digital Currencies · Monetary Policy Transmission
             </p>
 
             <h2>Working Papers</h2>
@@ -510,22 +523,18 @@
                     This paper studies whether central-bank refinancing can neutralise
                     the bank-credit effects of deposit displacement caused by a capped,
                     non-remunerated retail CBDC. I develop a nonlinear New Keynesian
-                    model with cash, bank deposits, CBDC, central-bank refinancing,
-                    marketable liquid assets, and an occasionally binding
-                    prudential-liquidity requirement. One-for-one refinancing restores
-                    the quantity of bank funding exactly, but it does not generally
-                    preserve bank credit because deposits and central-bank borrowing
-                    have different implications for prudential liquidity. The
-                    credit-minimising refinancing ratio can therefore lie above, at,
-                    or below one-for-one depending on the net liquidity transformation
-                    generated by refinancing and the persistence of liquidity stress.
-                    Quantitatively, one-for-one refinancing is nearly credit-neutral
-                    under short-lived stress when refinancing generates sufficient
-                    prudential liquidity, but remains materially non-neutral when
-                    liquidity stress persists. Moreover, the refinancing ratio that
-                    best stabilises credit need not maximise welfare. Replacing the
-                    quantity of deposits displaced by CBDC is therefore not sufficient
-                    to guarantee equivalence in bank intermediation.
+                    model in which deposits and central-bank refinancing have different
+                    implications for prudential liquidity. One-for-one refinancing
+                    restores bank funding exactly, but does not generally preserve bank
+                    credit. The credit-minimising refinancing ratio can lie above, at,
+                    or below one depending on the liquidity transformation generated by
+                    refinancing and the persistence of liquidity stress. Quantitatively,
+                    one-for-one refinancing is nearly credit-neutral under short-lived
+                    stress when refinancing supplies sufficient prudential liquidity,
+                    but remains materially non-neutral when stress persists. Credit
+                    stabilisation and welfare can also favour different refinancing
+                    intensities. Funding neutrality is therefore not sufficient to
+                    guarantee equivalence in bank intermediation.
                 </p>
 
             </div>
@@ -624,10 +633,9 @@
 
                 <p>
                     I teach undergraduate Statistics, covering probability,
-                    estimation, statistical inference, hypothesis testing,
-                    and regression. Teaching combines theoretical concepts with
-                    guided exercises, quantitative problem solving, and preparation
-                    of assessment materials.
+                    estimation, statistical inference, hypothesis testing, and
+                    regression. Teaching combines theoretical concepts with guided
+                    exercises and structured quantitative problem solving.
                 </p>
 
             </div>
@@ -643,22 +651,44 @@
                 </div>
 
                 <p>
-                    As an Honorary Fellow and Academic Tutor, I contribute to
-                    teaching, examination activities, and student support in
-                    Macroeconomics, Monetary and Credit Economics, Statistics,
-                    Applied Statistics, Mathematics, and quantitative methods.
+                    As an Honorary Fellow and Academic Tutor, I contribute to teaching,
+                    examination activities, and student support in Macroeconomics,
+                    Monetary and Credit Economics, Statistics, Applied Statistics,
+                    Mathematics, and quantitative methods, with an emphasis on linking
+                    theoretical concepts to applied problem solving.
                 </p>
 
             </div>
 
-            <h2>Teaching Approach</h2>
+            <div class="student-note">
 
-            <p>
-                My teaching emphasises economic and statistical intuition alongside
-                structured problem solving. I aim to help students understand not
-                only how to apply a method, but why it is appropriate and how to
-                interpret the result.
-            </p>
+                <strong>Are you one of my students?</strong>
+
+                <p>
+                    Questions are always welcome — ideally before the evening
+                    before the exam. For course-related matters, please use the
+                    institutional email corresponding to your university:
+                </p>
+
+                <div class="student-emails">
+
+                    <div>
+                        University of Insubria:
+                        <a href="mailto:akoka@uninsubria.it">
+                            akoka@uninsubria.it
+                        </a>
+                    </div>
+
+                    <div>
+                        Università degli Studi di Milano:
+                        <a href="mailto:ardit.koka@unimi.it">
+                            ardit.koka@unimi.it
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
