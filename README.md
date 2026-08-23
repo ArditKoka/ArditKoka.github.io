@@ -2,544 +2,569 @@
 
 <head>
 
-    <meta name="google-site-verification" content="0hJ8jug-XxHPrRFzH_mslLafvPpysxxd8O42VJ3PwuM">
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ardit Koka | Economics</title>
+    <meta name="google-site-verification" content="0hJ8jug-XxHPrRFzH_mslLafvPpysxxd8O42VJ3PwuM">
+
+    <meta name="author" content="Ardit Koka">
 
     <meta
         name="description"
-        content="Academic website of Ardit Koka, PhD Candidate in Economics at the University of Insubria. Research in macroeconomics, monetary economics, banking, financial intermediation and central bank digital currencies."
+        content="Ardit Koka is a PhD Candidate in Economics at the University of Insubria. His research focuses on monetary economics, banking, financial intermediation, central bank digital currencies and monetary-policy transmission."
     >
+
+    <meta property="og:title" content="Ardit Koka | Economics">
+
+    <meta
+        property="og:description"
+        content="PhD Candidate in Economics researching monetary economics, banking, financial intermediation and central bank digital currencies."
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://arditkoka.github.io/">
+
+    <meta property="og:image" content="https://arditkoka.github.io/Photo.jpeg">
+
+    <title>Ardit Koka | Economics</title>
 
     <style>
 
-        :root {
-            --blue: #006699;
-            --blue-dark: #004b70;
-            --blue-light: #eef6fa;
-            --ink: #24313b;
-            --text: #36434d;
-            --muted: #697782;
-            --line: #dce4e8;
-            --paper: #ffffff;
-            --background: #f7f9fa;
+        .ak-site {
+            --ak-navy: #153d5a;
+            --ak-blue: #006b98;
+            --ak-blue-dark: #004e70;
+            --ak-text: #34424c;
+            --ak-ink: #202c35;
+            --ak-muted: #6c7881;
+            --ak-line: #e1e6e9;
+            --ak-soft: #f5f8f9;
+            --ak-blue-soft: #eef6f9;
+            --ak-white: #ffffff;
+            width: 100%;
+            color: var(--ak-text);
+            background: var(--ak-white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
+        .ak-site,
+        .ak-site * {
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 90px;
+        .ak-site a {
+            color: var(--ak-blue);
         }
 
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--text);
-            background: var(--background);
-            line-height: 1.7;
-        }
-
-        a {
-            color: var(--blue);
-        }
-
-        .container {
-            width: min(1060px, calc(100% - 44px));
+        .ak-container {
+            width: calc(100% - 44px);
+            max-width: 980px;
             margin: 0 auto;
         }
 
-        .navbar {
+        .ak-nav {
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
             background: rgba(255, 255, 255, 0.97);
-            border-bottom: 1px solid var(--line);
+            border-bottom: 1px solid var(--ak-line);
         }
 
-        .nav-inner {
-            min-height: 67px;
+        .ak-nav-inner {
+            min-height: 64px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 25px;
+            gap: 30px;
         }
 
-        .nav-name {
-            color: var(--ink);
-            font-size: 1.08rem;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-
-        .nav-links a {
-            color: var(--text);
-            font-size: 0.95rem;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .nav-links a:hover {
-            color: var(--blue);
-        }
-
-        .hero {
-            background: var(--blue);
-            color: white;
-            padding: 72px 0 68px;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 190px;
-            align-items: center;
-            gap: 65px;
-        }
-
-        .eyebrow {
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.11em;
-            opacity: 0.8;
-            margin-bottom: 10px;
-        }
-
-        .hero h1 {
+        .ak-nav-name {
+            color: var(--ak-ink) !important;
             font-family: Georgia, "Times New Roman", serif;
-            font-weight: 500;
-            font-size: clamp(3rem, 7vw, 4.6rem);
-            line-height: 1;
-            margin-bottom: 17px;
-        }
-
-        .hero-role {
-            font-size: 1.32rem;
-            line-height: 1.45;
-            margin-bottom: 7px;
-        }
-
-        .hero-institution {
-            font-size: 1.04rem;
-            opacity: 0.9;
-        }
-
-        .hero-fields {
-            margin-top: 27px;
-            max-width: 710px;
-            font-size: 1rem;
-            line-height: 1.7;
-            opacity: 0.95;
-        }
-
-        .hero-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 11px;
-            margin-top: 28px;
-        }
-
-        .hero-button {
-            display: inline-block;
-            padding: 9px 16px;
-            border: 1px solid rgba(255, 255, 255, 0.55);
-            border-radius: 5px;
-            color: white;
-            text-decoration: none;
-            font-size: 0.93rem;
+            font-size: 1.17rem;
             font-weight: 600;
+            text-decoration: none;
+            white-space: nowrap;
         }
 
-        .hero-button:hover {
-            background: white;
-            color: var(--blue-dark);
+        .ak-nav-links {
+            display: flex;
+            align-items: center;
+            gap: 26px;
         }
 
-        .profile-photo {
+        .ak-nav-links a {
+            color: var(--ak-text) !important;
+            font-size: 0.92rem;
+            font-weight: 600;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .ak-nav-links a:hover {
+            color: var(--ak-blue) !important;
+        }
+
+        .ak-intro {
+            padding: 67px 0 60px;
+            border-bottom: 1px solid var(--ak-line);
+        }
+
+        .ak-intro-grid {
+            display: grid;
+            grid-template-columns: 190px minmax(0, 1fr);
+            gap: 52px;
+            align-items: center;
+        }
+
+        .ak-photo {
+            display: block;
             width: 180px;
             height: 180px;
-            object-fit: cover;
             border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            border: 1px solid #d8e0e4;
+            padding: 4px;
+            background: white;
         }
 
-        main {
-            background: var(--paper);
-        }
-
-        .section {
-            padding: 66px 0;
-            border-bottom: 1px solid var(--line);
-        }
-
-        .section:last-child {
-            border-bottom: 0;
-        }
-
-        .section-heading {
-            margin-bottom: 30px;
-        }
-
-        .section-label {
-            color: var(--blue);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
+        .ak-kicker {
+            color: var(--ak-blue);
             font-size: 0.78rem;
             font-weight: 700;
-            margin-bottom: 6px;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
         }
 
-        .section h2 {
+        .ak-name {
+            margin: 0;
+            color: var(--ak-ink);
             font-family: Georgia, "Times New Roman", serif;
-            color: var(--ink);
-            font-size: 2.15rem;
+            font-size: clamp(2.8rem, 6vw, 4.15rem);
             font-weight: 500;
-            line-height: 1.2;
+            line-height: 1.05;
         }
 
-        .about-text {
-            max-width: 800px;
-            font-size: 1.06rem;
+        .ak-position {
+            margin-top: 13px;
+            color: var(--ak-ink);
+            font-size: 1.16rem;
+            line-height: 1.5;
         }
 
-        .about-text p + p {
-            margin-top: 15px;
+        .ak-affiliation {
+            margin-top: 3px;
+            color: var(--ak-muted);
+            font-size: 0.98rem;
         }
 
-        .research-fields {
+        .ak-research-statement {
+            max-width: 680px;
+            margin-top: 23px;
+            font-family: Georgia, "Times New Roman", serif;
+            color: var(--ak-navy);
+            font-size: 1.25rem;
+            line-height: 1.55;
+        }
+
+        .ak-visiting {
+            margin-top: 17px;
+            max-width: 680px;
+            color: var(--ak-text);
+        }
+
+        .ak-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 9px;
-            margin-bottom: 42px;
+            gap: 17px;
+            margin-top: 24px;
         }
 
-        .research-field {
-            padding: 7px 12px;
-            background: var(--blue-light);
-            border: 1px solid #d6e8f1;
-            border-radius: 4px;
-            color: var(--blue-dark);
-            font-size: 0.91rem;
-            font-weight: 600;
+        .ak-links a {
+            color: var(--ak-blue-dark) !important;
+            font-size: 0.93rem;
+            font-weight: 650;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
         }
 
-        .paper-card {
-            max-width: 920px;
-            padding: 28px 30px;
-            border: 1px solid var(--line);
-            border-left: 4px solid var(--blue);
-            background: #fcfdfd;
+        .ak-links a:hover {
+            border-bottom-color: var(--ak-blue);
         }
 
-        .paper-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-            margin-bottom: 18px;
+        .ak-section {
+            padding: 58px 0;
+            border-bottom: 1px solid var(--ak-line);
         }
 
-        .paper-title {
+        .ak-section-head {
+            margin-bottom: 27px;
+        }
+
+        .ak-label {
+            margin-bottom: 5px;
+            color: var(--ak-blue);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .ak-title {
+            margin: 0;
+            color: var(--ak-ink);
             font-family: Georgia, "Times New Roman", serif;
-            color: var(--ink);
-            font-size: 1.43rem;
-            line-height: 1.35;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.25;
         }
 
-        .paper-status {
-            white-space: nowrap;
-            padding: 5px 9px;
-            background: var(--blue-light);
-            color: var(--blue-dark);
-            border-radius: 4px;
-            font-size: 0.8rem;
+        .ak-fields {
+            max-width: 900px;
+            margin-bottom: 31px;
+            color: var(--ak-muted);
+            font-size: 0.97rem;
+        }
+
+        .ak-featured {
+            max-width: 900px;
+            padding: 29px 31px;
+            border: 1px solid var(--ak-line);
+            border-top: 3px solid var(--ak-navy);
+            background: var(--ak-white);
+        }
+
+        .ak-featured-label {
+            margin-bottom: 9px;
+            color: var(--ak-blue);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .ak-paper-title {
+            margin: 0;
+            color: var(--ak-ink);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.38;
+        }
+
+        .ak-paper-note {
+            margin-top: 12px;
+            max-width: 780px;
+            color: #46545d;
+        }
+
+        .ak-paper-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 17px;
+        }
+
+        .ak-paper-links a,
+        .ak-paper-links span {
+            color: var(--ak-blue-dark);
+            font-size: 0.89rem;
+            font-weight: 650;
+            text-decoration: none;
+        }
+
+        .ak-paper-links .ak-inactive {
+            color: var(--ak-muted);
+        }
+
+        .ak-abstract-details {
+            margin-top: 22px;
+            padding-top: 18px;
+            border-top: 1px solid var(--ak-line);
+        }
+
+        .ak-abstract-details summary {
+            width: fit-content;
+            color: var(--ak-blue-dark);
+            cursor: pointer;
+            font-size: 0.91rem;
             font-weight: 700;
         }
 
-        .abstract-label {
-            color: var(--ink);
-            font-weight: 700;
-            margin-bottom: 6px;
-        }
-
-        .abstract {
-            color: #46535c;
+        .ak-abstract {
+            max-width: 810px;
+            margin-top: 15px;
+            color: #46545d;
             text-align: justify;
         }
 
-        .soon {
-            margin-top: 17px;
-            color: var(--blue);
-            font-size: 0.92rem;
-            font-weight: 600;
+        .ak-presentations {
+            max-width: 900px;
         }
 
-        .timeline {
-            max-width: 920px;
-        }
-
-        .timeline-item {
+        .ak-talk {
             display: grid;
-            grid-template-columns: 115px 1fr;
-            gap: 25px;
-            padding: 23px 0;
-            border-bottom: 1px solid var(--line);
+            grid-template-columns: 112px minmax(0, 1fr);
+            gap: 23px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--ak-line);
         }
 
-        .timeline-item:first-child {
+        .ak-talk:first-child {
             padding-top: 0;
         }
 
-        .timeline-item:last-child {
+        .ak-talk:last-child {
             border-bottom: 0;
         }
 
-        .timeline-date {
-            color: var(--blue);
-            font-weight: 700;
-            font-size: 0.92rem;
+        .ak-talk-date {
+            color: var(--ak-muted);
+            font-size: 0.88rem;
+            font-weight: 600;
         }
 
-        .timeline-title {
-            color: var(--ink);
-            font-weight: 700;
+        .ak-talk-title {
+            color: var(--ak-ink);
+            font-weight: 650;
             line-height: 1.45;
-            margin-bottom: 4px;
         }
 
-        .timeline-event {
-            color: #52616b;
+        .ak-talk-event {
+            margin-top: 3px;
+            color: #53616a;
         }
 
-        .timeline-place {
-            color: var(--muted);
-            font-size: 0.94rem;
+        .ak-talk-place {
+            margin-top: 2px;
+            color: var(--ak-muted);
+            font-size: 0.91rem;
+        }
+
+        .ak-teaching {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 38px;
+            max-width: 900px;
+        }
+
+        .ak-teaching h3 {
+            margin: 0;
+            color: var(--ak-ink);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.28rem;
+            font-weight: 500;
+        }
+
+        .ak-university {
+            margin-top: 3px;
+            margin-bottom: 11px;
+            color: var(--ak-blue);
+            font-size: 0.9rem;
+            font-weight: 650;
+        }
+
+        .ak-teaching p {
+            margin: 0;
+        }
+
+        .ak-student-box {
+            max-width: 900px;
+            margin-top: 29px;
+            padding: 18px 21px;
+            background: var(--ak-blue-soft);
+            border-left: 3px solid var(--ak-blue);
+        }
+
+        .ak-student-title {
+            color: var(--ak-navy);
+            font-weight: 700;
+        }
+
+        .ak-student-box p {
+            margin: 4px 0 9px;
+        }
+
+        .ak-student-emails {
+            font-size: 0.93rem;
+        }
+
+        .ak-student-emails div + div {
             margin-top: 2px;
         }
 
-        .teaching-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-            max-width: 920px;
-        }
-
-        .teaching-card {
-            padding: 25px 27px;
-            border: 1px solid var(--line);
-            background: #fcfdfd;
-        }
-
-        .teaching-card h3 {
-            color: var(--ink);
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 1.3rem;
-            font-weight: 500;
-            margin-bottom: 3px;
-        }
-
-        .teaching-university {
-            color: var(--blue);
-            font-size: 0.92rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-
-        .student-note {
-            max-width: 920px;
-            margin-top: 26px;
-            padding: 21px 24px;
-            background: var(--blue-light);
-            border-left: 4px solid var(--blue);
-        }
-
-        .student-note-title {
-            color: var(--blue-dark);
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .student-note p {
-            margin-bottom: 10px;
-        }
-
-        .student-email {
-            display: block;
-            margin-top: 4px;
-        }
-
-        .student-email a {
-            font-weight: 600;
+        .ak-student-emails a {
+            font-weight: 650;
             text-decoration: none;
         }
 
-        .cv-panel {
-            max-width: 780px;
-            padding: 30px;
-            border: 1px solid var(--line);
-            background: #fcfdfd;
+        .ak-cv {
+            max-width: 750px;
         }
 
-        .cv-panel p {
-            margin-bottom: 10px;
+        .ak-cv p {
+            margin: 0;
         }
 
-        .cv-coming {
-            color: var(--blue);
-            font-weight: 700;
+        .ak-cv-status {
+            margin-top: 9px;
+            color: var(--ak-blue);
+            font-weight: 650;
         }
 
-        .contact-grid {
+        .ak-contact {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 35px;
-            max-width: 800px;
+            gap: 42px;
+            max-width: 760px;
         }
 
-        .contact-title {
-            color: var(--ink);
-            font-weight: 700;
+        .ak-contact-heading {
             margin-bottom: 5px;
+            color: var(--ak-ink);
+            font-weight: 700;
         }
 
-        .contact-grid a {
+        .ak-contact a {
+            font-weight: 650;
             text-decoration: none;
-            font-weight: 600;
         }
 
-        footer {
-            background: #f3f6f7;
-            border-top: 1px solid var(--line);
-            padding: 26px 0;
-            color: var(--muted);
-            font-size: 0.88rem;
+        .ak-footer {
+            padding: 25px 0;
+            background: var(--ak-soft);
+            color: var(--ak-muted);
+            font-size: 0.85rem;
         }
 
-        .footer-inner {
+        .ak-footer-inner {
             display: flex;
             justify-content: space-between;
-            gap: 25px;
+            gap: 20px;
         }
 
-        @media (max-width: 760px) {
+        @media (max-width: 720px) {
 
-            .container {
-                width: min(100% - 30px, 1060px);
+            .ak-container {
+                width: calc(100% - 30px);
             }
 
-            .nav-inner {
-                min-height: 60px;
-            }
-
-            .nav-name {
+            .ak-nav-name {
                 display: none;
             }
 
-            .nav-links {
+            .ak-nav-links {
                 width: 100%;
                 justify-content: space-between;
                 gap: 10px;
+                overflow-x: auto;
             }
 
-            .nav-links a {
-                font-size: 0.87rem;
+            .ak-nav-links a {
+                font-size: 0.84rem;
             }
 
-            .hero {
-                padding: 46px 0;
+            .ak-intro {
+                padding: 45px 0 42px;
             }
 
-            .hero-grid {
+            .ak-intro-grid {
                 grid-template-columns: 1fr;
+                gap: 26px;
                 text-align: center;
-                gap: 28px;
             }
 
-            .hero-photo {
-                order: -1;
-            }
-
-            .profile-photo {
+            .ak-photo {
                 width: 145px;
                 height: 145px;
+                margin: 0 auto;
             }
 
-            .hero-fields {
+            .ak-research-statement,
+            .ak-visiting {
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            .hero-links {
+            .ak-links {
                 justify-content: center;
             }
 
-            .section {
-                padding: 48px 0;
+            .ak-section {
+                padding: 45px 0;
             }
 
-            .paper-top {
-                display: block;
+            .ak-featured {
+                padding: 23px 21px;
             }
 
-            .paper-status {
-                display: inline-block;
-                margin-top: 10px;
-            }
-
-            .abstract {
+            .ak-abstract {
                 text-align: left;
             }
 
-            .timeline-item {
+            .ak-talk {
                 grid-template-columns: 1fr;
-                gap: 4px;
+                gap: 3px;
             }
 
-            .teaching-grid {
+            .ak-teaching {
                 grid-template-columns: 1fr;
+                gap: 28px;
             }
 
-            .contact-grid {
+            .ak-contact {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 23px;
             }
 
-            .footer-inner {
+            .ak-footer-inner {
                 flex-direction: column;
+                gap: 3px;
                 text-align: center;
-                gap: 4px;
             }
 
         }
 
     </style>
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ardit Koka",
+        "url": "https://arditkoka.github.io/",
+        "image": "https://arditkoka.github.io/Photo.jpeg",
+        "jobTitle": "PhD Candidate in Economics",
+        "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Insubria"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/arditkoka"
+        ]
+    }
+    </script>
+
 </head>
 
 <body>
 
-    <nav class="navbar">
+<div class="ak-site">
 
-        <div class="container nav-inner">
+    <nav class="ak-nav">
 
-            <a class="nav-name" href="#home">
+        <div class="ak-container ak-nav-inner">
+
+            <a class="ak-nav-name" href="#home">
                 Ardit Koka
             </a>
 
-            <div class="nav-links">
+            <div class="ak-nav-links">
 
                 <a href="#home">
                     Home
@@ -567,45 +592,63 @@
 
     </nav>
 
-    <header class="hero" id="home">
+    <header class="ak-intro" id="home">
 
-        <div class="container hero-grid">
+        <div class="ak-container ak-intro-grid">
 
             <div>
 
-                <div class="eyebrow">
+                <img
+                    class="ak-photo"
+                    src="Photo.jpeg"
+                    alt="Ardit Koka"
+                >
+
+            </div>
+
+            <div>
+
+                <div class="ak-kicker">
                     Economist · PhD Candidate
                 </div>
 
-                <h1>
+                <h1 class="ak-name">
                     Ardit Koka
                 </h1>
 
-                <div class="hero-role">
+                <div class="ak-position">
                     PhD Candidate in Methods and Models for Economic Decisions
                 </div>
 
-                <div class="hero-institution">
+                <div class="ak-affiliation">
                     Department of Economics · University of Insubria
                 </div>
 
-                <div class="hero-fields">
-                    Macroeconomics · Monetary Economics · Banking & Financial Intermediation ·
-                    Central Bank Digital Currencies · Monetary Policy Transmission
+                <div class="ak-research-statement">
+                    I study how new forms of money and central-bank liquidity interact
+                    with bank funding, prudential regulation, and monetary-policy transmission.
                 </div>
 
-                <div class="hero-links">
+                <div class="ak-visiting">
+                    From September 2025 to May 2026, I was a Visiting PhD Researcher
+                    at Lancaster University Management School.
+                </div>
 
-                    <a class="hero-button" href="#research">
+                <div class="ak-links">
+
+                    <a href="#research">
                         Research
                     </a>
 
-                    <a class="hero-button" href="mailto:akoka@uninsubria.it">
+                    <a href="#cv">
+                        CV
+                    </a>
+
+                    <a href="mailto:akoka@uninsubria.it">
                         Email
                     </a>
 
                     <a
-                        class="hero-button"
                         href="https://www.linkedin.com/in/arditkoka"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -617,192 +660,137 @@
 
             </div>
 
-            <div class="hero-photo">
-
-                <img
-                    src="Photo.jpeg"
-                    alt="Ardit Koka"
-                    class="profile-photo"
-                >
-
-            </div>
-
         </div>
 
     </header>
 
     <main>
 
-        <section class="section">
+        <section class="ak-section" id="research">
 
-            <div class="container">
+            <div class="ak-container">
 
-                <div class="section-heading">
+                <div class="ak-section-head">
 
-                    <div class="section-label">
-                        About
-                    </div>
-
-                    <h2>
-                        Researching money, banking and monetary policy
-                    </h2>
-
-                </div>
-
-                <div class="about-text">
-
-                    <p>
-                        I am a PhD Candidate in
-                        <a
-                            href="https://www.phd.eco.uninsubria.it/methods-and-models-for-economic-decisions/phd-students/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Methods and Models for Economic Decisions
-                        </a>
-                        at the University of Insubria.
-                    </p>
-
-                    <p>
-                        My research examines how changes in money and payment systems
-                        interact with bank funding, prudential liquidity, financial
-                        intermediation, and monetary-policy transmission.
-                    </p>
-
-                    <p>
-                        From September 2025 to May 2026, I was a Visiting PhD Researcher
-                        at Lancaster University Management School.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="section" id="research">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div class="section-label">
+                    <div class="ak-label">
                         Research
                     </div>
 
-                    <h2>
-                        Current research
+                    <h2 class="ak-title">
+                        Working papers
                     </h2>
 
                 </div>
 
-                <div class="research-fields">
-
-                    <span class="research-field">
-                        Macroeconomics
-                    </span>
-
-                    <span class="research-field">
-                        Monetary Economics
-                    </span>
-
-                    <span class="research-field">
-                        Banking & Financial Intermediation
-                    </span>
-
-                    <span class="research-field">
-                        Central Bank Digital Currencies
-                    </span>
-
-                    <span class="research-field">
-                        Monetary Policy Transmission
-                    </span>
-
+                <div class="ak-fields">
+                    Macroeconomics · Monetary Economics · Banking & Financial Intermediation ·
+                    Central Bank Digital Currencies · Monetary Policy Transmission
                 </div>
 
-                <div class="paper-card">
+                <article class="ak-featured">
 
-                    <div class="paper-top">
-
-                        <div class="paper-title">
-                            When Funding Neutrality Fails:
-                            CBDC, Refinancing, and Prudential Liquidity
-                        </div>
-
-                        <div class="paper-status">
-                            Working paper
-                        </div>
-
+                    <div class="ak-featured-label">
+                        Featured working paper
                     </div>
 
-                    <div class="abstract-label">
-                        Abstract
-                    </div>
+                    <h3 class="ak-paper-title">
+                        When Funding Neutrality Fails:
+                        CBDC, Refinancing, and Prudential Liquidity
+                    </h3>
 
-                    <p class="abstract">
-                        This paper studies whether central-bank refinancing can neutralise
-                        the bank-credit effects of deposit displacement caused by a capped,
-                        non-remunerated retail CBDC. I develop a nonlinear New Keynesian
-                        model in which deposits and central-bank refinancing have different
-                        implications for prudential liquidity. One-for-one refinancing
-                        restores bank funding exactly, but does not generally preserve bank
-                        credit. The credit-minimising refinancing ratio can lie above, at,
-                        or below one depending on the liquidity transformation generated by
-                        refinancing and the persistence of liquidity stress. Quantitatively,
-                        one-for-one refinancing is nearly credit-neutral under short-lived
-                        stress when refinancing supplies sufficient prudential liquidity,
-                        but remains materially non-neutral when stress persists. Credit
-                        stabilisation and welfare can also favour different refinancing
-                        intensities. Funding neutrality is therefore not sufficient to
-                        guarantee equivalence in bank intermediation.
+                    <p class="ak-paper-note">
+                        Can replacing CBDC-induced deposit outflows one-for-one with
+                        central-bank refinancing preserve bank credit? The paper shows
+                        why funding neutrality and credit neutrality are distinct once
+                        prudential liquidity constraints matter.
                     </p>
 
-                    <div class="soon">
-                        Manuscript available soon
+                    <div class="ak-paper-links">
+
+                        <span class="ak-inactive">
+                            Paper · available soon
+                        </span>
+
+                        <span class="ak-inactive">
+                            Slides · coming soon
+                        </span>
+
                     </div>
 
-                </div>
+                    <details class="ak-abstract-details">
+
+                        <summary>
+                            View abstract
+                        </summary>
+
+                        <p class="ak-abstract">
+                            This paper studies whether central-bank refinancing can
+                            neutralise the bank-credit effects of deposit displacement
+                            caused by a capped, non-remunerated retail CBDC. I develop
+                            a nonlinear New Keynesian model with cash, bank deposits,
+                            CBDC, central-bank refinancing, marketable liquid assets,
+                            and an occasionally binding prudential-liquidity requirement.
+                            One-for-one refinancing restores the quantity of bank funding
+                            exactly, but it does not generally preserve bank credit because
+                            deposits and central-bank borrowing have different implications
+                            for prudential liquidity. The credit-minimising refinancing
+                            ratio can therefore lie above, at, or below one-for-one
+                            depending on the net liquidity transformation generated by
+                            refinancing and the persistence of liquidity stress.
+                            Quantitatively, one-for-one refinancing is nearly credit-neutral
+                            under short-lived stress when refinancing generates sufficient
+                            prudential liquidity, but remains materially non-neutral when
+                            liquidity stress persists. Moreover, the refinancing ratio
+                            that best stabilises credit need not maximise welfare.
+                            Replacing the quantity of deposits displaced by CBDC is
+                            therefore not sufficient to guarantee equivalence in bank
+                            intermediation.
+                        </p>
+
+                    </details>
+
+                </article>
 
             </div>
 
         </section>
 
-        <section class="section" id="presentations">
+        <section class="ak-section" id="presentations">
 
-            <div class="container">
+            <div class="ak-container">
 
-                <div class="section-heading">
+                <div class="ak-section-head">
 
-                    <div class="section-label">
+                    <div class="ak-label">
                         Research communication
                     </div>
 
-                    <h2>
-                        Presentations & seminars
+                    <h2 class="ak-title">
+                        Selected presentations
                     </h2>
 
                 </div>
 
-                <div class="timeline">
+                <div class="ak-presentations">
 
-                    <div class="timeline-item">
+                    <div class="ak-talk">
 
-                        <div class="timeline-date">
+                        <div class="ak-talk-date">
                             May 2026
                         </div>
 
                         <div>
 
-                            <div class="timeline-title">
+                            <div class="ak-talk-title">
                                 CBDC and Monetary Policy Transmission:
                                 A Two-Tier Design with Bank Intermediation Frictions
                             </div>
 
-                            <div class="timeline-event">
+                            <div class="ak-talk-event">
                                 SoFiE Summer School and Conference on Structural Macro Modelling
                             </div>
 
-                            <div class="timeline-place">
+                            <div class="ak-talk-place">
                                 National Bank of Belgium · Brussels
                             </div>
 
@@ -810,50 +798,49 @@
 
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="ak-talk">
 
-                        <div class="timeline-date">
+                        <div class="ak-talk-date">
                             18 May 2026
                         </div>
 
                         <div>
 
-                            <div class="timeline-title">
+                            <div class="ak-talk-title">
                                 CBDC and Monetary Policy Transmission:
                                 A Two-Tier Design with Bank Intermediation Frictions
                             </div>
 
-                            <div class="timeline-event">
-                                Departmental Research Presentation · Department of Economics
+                            <div class="ak-talk-event">
+                                Departmental Research Presentation
                             </div>
 
-                            <div class="timeline-place">
-                                Lancaster University
+                            <div class="ak-talk-place">
+                                Department of Economics · Lancaster University
                             </div>
 
                         </div>
 
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="ak-talk">
 
-                        <div class="timeline-date">
+                        <div class="ak-talk-date">
                             13 May 2026
                         </div>
 
                         <div>
 
-                            <div class="timeline-title">
+                            <div class="ak-talk-title">
                                 CBDC and Monetary Policy Transmission:
                                 A Two-Tier Design with Bank Intermediation Frictions
                             </div>
 
-                            <div class="timeline-event">
-                                Workshop on Applied Economic Methods ·
-                                PhD Programme in Methods and Models for Economic Decisions
+                            <div class="ak-talk-event">
+                                Workshop on Applied Economic Methods
                             </div>
 
-                            <div class="timeline-place">
+                            <div class="ak-talk-place">
                                 Department of Economics · University of Insubria
                             </div>
 
@@ -861,23 +848,23 @@
 
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="ak-talk">
 
-                        <div class="timeline-date">
+                        <div class="ak-talk-date">
                             30 Apr 2024
                         </div>
 
                         <div>
 
-                            <div class="timeline-title">
+                            <div class="ak-talk-title">
                                 From Cryptocurrencies to Central Bank Digital Currencies
                             </div>
 
-                            <div class="timeline-event">
-                                Guest Lecture · Postgraduate Course in Monetary and Credit Economics
+                            <div class="ak-talk-event">
+                                Guest lecture · Monetary and Credit Economics
                             </div>
 
-                            <div class="timeline-place">
+                            <div class="ak-talk-place">
                                 University of Insubria
                             </div>
 
@@ -891,51 +878,50 @@
 
         </section>
 
-        <section class="section" id="teaching">
+        <section class="ak-section" id="teaching">
 
-            <div class="container">
+            <div class="ak-container">
 
-                <div class="section-heading">
+                <div class="ak-section-head">
 
-                    <div class="section-label">
+                    <div class="ak-label">
                         Teaching
                     </div>
 
-                    <h2>
-                        Economics & quantitative methods
+                    <h2 class="ak-title">
+                        Teaching activities
                     </h2>
 
                 </div>
 
-                <div class="teaching-grid">
+                <div class="ak-teaching">
 
-                    <div class="teaching-card">
+                    <div>
 
                         <h3>
                             Statistics
                         </h3>
 
-                        <div class="teaching-university">
+                        <div class="ak-university">
                             Università degli Studi di Milano
                         </div>
 
                         <p>
-                            I teach undergraduate Statistics, covering probability,
+                            Undergraduate Statistics covering probability,
                             estimation, statistical inference, hypothesis testing,
-                            and regression. Teaching combines theoretical concepts
-                            with guided exercises and structured quantitative
-                            problem solving.
+                            and regression, combining theory with guided exercises
+                            and quantitative problem solving.
                         </p>
 
                     </div>
 
-                    <div class="teaching-card">
+                    <div>
 
                         <h3>
                             Economics & Quantitative Methods
                         </h3>
 
-                        <div class="teaching-university">
+                        <div class="ak-university">
                             University of Insubria
                         </div>
 
@@ -951,31 +937,34 @@
 
                 </div>
 
-                <div class="student-note">
+                <div class="ak-student-box">
 
-                    <div class="student-note-title">
+                    <div class="ak-student-title">
                         Are you one of my students?
                     </div>
 
                     <p>
-                        Questions are welcome — preferably before the evening
-                        before the exam. For course-related matters, please use
-                        the institutional email for your university.
+                        Questions are always welcome — preferably before the evening
+                        before the exam. Please use the institutional address for your university.
                     </p>
 
-                    <span class="student-email">
-                        University of Insubria:
-                        <a href="mailto:akoka@uninsubria.it">
-                            akoka@uninsubria.it
-                        </a>
-                    </span>
+                    <div class="ak-student-emails">
 
-                    <span class="student-email">
-                        Università degli Studi di Milano:
-                        <a href="mailto:ardit.koka@unimi.it">
-                            ardit.koka@unimi.it
-                        </a>
-                    </span>
+                        <div>
+                            Insubria:
+                            <a href="mailto:akoka@uninsubria.it">
+                                akoka@uninsubria.it
+                            </a>
+                        </div>
+
+                        <div>
+                            University of Milan:
+                            <a href="mailto:ardit.koka@unimi.it">
+                                ardit.koka@unimi.it
+                            </a>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -983,29 +972,29 @@
 
         </section>
 
-        <section class="section" id="cv">
+        <section class="ak-section" id="cv">
 
-            <div class="container">
+            <div class="ak-container">
 
-                <div class="section-heading">
+                <div class="ak-section-head">
 
-                    <div class="section-label">
+                    <div class="ak-label">
                         Curriculum Vitae
                     </div>
 
-                    <h2>
+                    <h2 class="ak-title">
                         Academic CV
                     </h2>
 
                 </div>
 
-                <div class="cv-panel">
+                <div class="ak-cv">
 
                     <p>
-                        My academic curriculum vitae will be available here shortly.
+                        An updated academic curriculum vitae will be available here shortly.
                     </p>
 
-                    <div class="cv-coming">
+                    <div class="ak-cv-status">
                         Academic CV coming soon
                     </div>
 
@@ -1015,34 +1004,32 @@
 
         </section>
 
-        <section class="section" id="contact">
+        <section class="ak-section">
 
-            <div class="container">
+            <div class="ak-container">
 
-                <div class="section-heading">
+                <div class="ak-section-head">
 
-                    <div class="section-label">
+                    <div class="ak-label">
                         Contact
                     </div>
 
-                    <h2>
-                        Get in touch
+                    <h2 class="ak-title">
+                        Contact
                     </h2>
 
                 </div>
 
-                <div class="contact-grid">
+                <div class="ak-contact">
 
                     <div>
 
-                        <div class="contact-title">
+                        <div class="ak-contact-heading">
                             University of Insubria
                         </div>
 
-                        <div>
-                            Department of Economics<br>
-                            Varese, Italy
-                        </div>
+                        Department of Economics<br>
+                        Varese, Italy<br>
 
                         <a href="mailto:akoka@uninsubria.it">
                             akoka@uninsubria.it
@@ -1052,7 +1039,7 @@
 
                     <div>
 
-                        <div class="contact-title">
+                        <div class="ak-contact-heading">
                             Online
                         </div>
 
@@ -1074,28 +1061,30 @@
 
     </main>
 
-    <footer>
+    <footer class="ak-footer">
 
-        <div class="container footer-inner">
+        <div class="ak-container ak-footer-inner">
 
             <div>
-                © <span id="year"></span> Ardit Koka
+                © <span id="ak-year"></span> Ardit Koka
             </div>
 
             <div>
-                Economics · Monetary Policy · Banking
+                Monetary Economics · Banking · Digital Money
             </div>
 
         </div>
 
     </footer>
 
-    <script>
+</div>
 
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
+<script>
 
-    </script>
+    document.getElementById("ak-year").textContent =
+        new Date().getFullYear();
+
+</script>
 
 </body>
 
