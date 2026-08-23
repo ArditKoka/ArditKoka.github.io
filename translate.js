@@ -1,0 +1,1 @@
+document.getElementById("ak-year").textContent=new Date().getFullYear();function akTranslate(t,s){if(!t)return;window.location.href="https://translate.google.com/translate?sl="+encodeURIComponent(s)+"&tl="+encodeURIComponent(t)+"&u="+encodeURIComponent(window.location.href);}
