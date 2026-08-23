@@ -233,14 +233,9 @@
             margin-top: 1px;
         }
 
-        .teaching-intro {
-            max-width: 1000px;
-            margin-bottom: 28px;
-        }
-
         .teaching-block {
             max-width: 1000px;
-            margin-bottom: 34px;
+            margin-bottom: 32px;
         }
 
         .teaching-title {
@@ -252,14 +247,7 @@
 
         .teaching-institution {
             color: #4f5d68;
-            margin-bottom: 12px;
-        }
-
-        .teaching-subsection {
-            margin-top: 20px;
-            margin-bottom: 7px;
-            font-weight: 700;
-            color: var(--primary-color);
+            margin-bottom: 10px;
         }
 
         .contact-links {
@@ -525,7 +513,7 @@
                     model with cash, bank deposits, CBDC, central-bank refinancing,
                     marketable liquid assets, and an occasionally binding
                     prudential-liquidity requirement. One-for-one refinancing restores
-                    the quantity of bank funding exactly, but does not generally
+                    the quantity of bank funding exactly, but it does not generally
                     preserve bank credit because deposits and central-bank borrowing
                     have different implications for prudential liquidity. The
                     credit-minimising refinancing ratio can therefore lie above, at,
@@ -624,180 +612,53 @@
 
             <h2>Teaching</h2>
 
-            <p class="teaching-intro">
-                My teaching activity spans statistics, quantitative methods,
-                macroeconomics, monetary economics, and mathematics at undergraduate
-                and postgraduate level. I place particular emphasis on connecting
-                formal methods with economic intuition, structured problem solving,
-                and the interpretation of quantitative results.
-            </p>
-
-            <h2>Statistics</h2>
-
             <div class="teaching-block">
 
                 <div class="teaching-title">
+                    Statistics
+                </div>
+
+                <div class="teaching-institution">
                     Università degli Studi di Milano
                 </div>
 
-                <div class="teaching-institution">
-                    Undergraduate teaching
-                </div>
-
                 <p>
-                    I teach Statistics to cohorts of more than 300 second-year
-                    Bachelor's students. The teaching activity combines statistical
-                    theory with extensive quantitative exercises and applications,
-                    with particular attention to developing students' ability to
-                    choose, apply, and interpret appropriate statistical methods.
+                    I teach undergraduate Statistics, covering probability,
+                    estimation, statistical inference, hypothesis testing,
+                    and regression. Teaching combines theoretical concepts with
+                    guided exercises, quantitative problem solving, and preparation
+                    of assessment materials.
                 </p>
 
-                <div class="teaching-subsection">
-                    Main topics
-                </div>
-
-                <ul>
-                    <li>Descriptive statistics</li>
-                    <li>Probability and random variables</li>
-                    <li>Probability distributions</li>
-                    <li>Sampling and sampling distributions</li>
-                    <li>Point estimation</li>
-                    <li>Confidence intervals</li>
-                    <li>Statistical inference</li>
-                    <li>Hypothesis testing</li>
-                    <li>Correlation analysis</li>
-                    <li>Regression analysis</li>
-                </ul>
-
-                <div class="teaching-subsection">
-                    Teaching activities
-                </div>
-
-                <ul>
-                    <li>Classroom teaching and quantitative exercise sessions</li>
-                    <li>Step-by-step solution and discussion of statistical problems</li>
-                    <li>Preparation of original exercises and teaching materials</li>
-                    <li>Revision and exam-preparation activities</li>
-                    <li>Assessment of student performance</li>
-                </ul>
-
             </div>
-
-            <h2>Economics & Quantitative Methods</h2>
 
             <div class="teaching-block">
 
                 <div class="teaching-title">
-                    University of Insubria
+                    Economics & Quantitative Methods
                 </div>
 
                 <div class="teaching-institution">
-                    Undergraduate and postgraduate teaching support
+                    University of Insubria
                 </div>
 
                 <p>
                     As an Honorary Fellow and Academic Tutor, I contribute to
-                    teaching, examination activities, and student support across
-                    economics and quantitative subjects. These activities include
-                    individual and group tutoring, guided exercise sessions,
-                    clarification of theoretical concepts, quantitative problem
-                    solving, and preparation for university examinations.
+                    teaching, examination activities, and student support in
+                    Macroeconomics, Monetary and Credit Economics, Statistics,
+                    Applied Statistics, Mathematics, and quantitative methods.
                 </p>
-
-                <div class="teaching-subsection">
-                    Economics
-                </div>
-
-                <ul>
-                    <li>Macroeconomics</li>
-                    <li>Monetary and Credit Economics</li>
-                    <li>Public Finance</li>
-                </ul>
-
-                <div class="teaching-subsection">
-                    Statistics & Quantitative Methods
-                </div>
-
-                <ul>
-                    <li>Statistics</li>
-                    <li>Applied Statistics</li>
-                    <li>Probability</li>
-                    <li>Quantitative Methods</li>
-                </ul>
-
-                <div class="teaching-subsection">
-                    Mathematics
-                </div>
-
-                <ul>
-                    <li>Mathematics</li>
-                    <li>Mathematics for Economics and Finance</li>
-                </ul>
-
-                <div class="teaching-subsection">
-                    Additional academic support
-                </div>
-
-                <ul>
-                    <li>Accounting and Management</li>
-                    <li>Individual and group tutoring</li>
-                    <li>Guided problem-solving sessions</li>
-                    <li>Exam preparation</li>
-                    <li>Development of exercises and teaching materials</li>
-                    <li>Support for students with different levels of quantitative preparation</li>
-                </ul>
-
-            </div>
-
-            <h2>Examination Activities</h2>
-
-            <div class="teaching-block">
-
-                <p>
-                    As an Honorary Fellow at the University of Insubria,
-                    I participate in university examination activities and
-                    collaborate with faculty in the assessment of students.
-                </p>
-
-                <ul>
-                    <li>Macroeconomics</li>
-                    <li>Monetary and Credit Economics</li>
-                    <li>Statistics</li>
-                    <li>Mathematics</li>
-                    <li>Mathematics for Economics and Finance</li>
-                </ul>
 
             </div>
 
             <h2>Teaching Approach</h2>
 
-            <div class="teaching-block">
-
-                <p>
-                    My teaching approach is centred on making quantitative and
-                    economic reasoning transparent. I aim to move beyond the
-                    mechanical application of formulas by emphasising why a method
-                    is appropriate, how a problem should be structured, and how the
-                    resulting answer should be interpreted.
-                </p>
-
-                <p>
-                    In quantitative courses, I combine theoretical explanation with
-                    worked examples and progressively more demanding exercises.
-                    Particular attention is given to common sources of error and to
-                    developing a reproducible sequence of reasoning that students
-                    can apply independently to new problems.
-                </p>
-
-                <p>
-                    This is particularly important in large and heterogeneous
-                    classes, where students may enter with substantially different
-                    levels of mathematical preparation. I therefore aim to maintain
-                    analytical rigour while presenting complex material through
-                    clear and structured problem-solving methods.
-                </p>
-
-            </div>
+            <p>
+                My teaching emphasises economic and statistical intuition alongside
+                structured problem solving. I aim to help students understand not
+                only how to apply a method, but why it is appropriate and how to
+                interpret the result.
+            </p>
 
         </section>
 
@@ -864,11 +725,13 @@
             targetPanel.classList.add("active");
 
             if (updateHash) {
+
                 history.replaceState(
                     null,
                     "",
                     "#" + tabName
                 );
+
             }
 
         }
@@ -888,7 +751,9 @@
             initialTab &&
             document.getElementById(initialTab)
         ) {
+
             activateTab(initialTab, false);
+
         }
 
         document.getElementById("year").textContent =
