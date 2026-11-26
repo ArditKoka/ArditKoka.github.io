@@ -694,8 +694,8 @@
                     </div>
 
                     <h3 class="ak-paper-title">
-                        When Funding Neutrality Fails:
-                        CBDC, Refinancing, and Prudential Liquidity
+                        CBDC and Monetary Architecture:
+                        Bank Credit beyond Funding Neutrality
                     </h3>
 
                     <p class="ak-paper-note">
@@ -707,13 +707,13 @@
 
                     <div class="ak-paper-links">
 
-                        <span class="ak-inactive">
-                            Paper · available soon
-                        </span>
-
-                        <span class="ak-inactive">
-                            Slides · coming soon
-                        </span>
+                        <a
+                            href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7430418"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            SSRN Working Paper · September 2026
+                        </a>
 
                     </div>
 
@@ -772,6 +772,31 @@
                 </div>
 
                 <div class="ak-presentations">
+
+                    <div class="ak-talk">
+
+                        <div class="ak-talk-date">
+                            24–25 Nov 2026
+                        </div>
+
+                        <div>
+
+                            <div class="ak-talk-title">
+                                CBDC and Monetary Architecture:
+                                Bank Credit beyond Funding Neutrality
+                            </div>
+
+                            <div class="ak-talk-event">
+                                20th South-Eastern European Economic Research Workshop
+                            </div>
+
+                            <div class="ak-talk-place">
+                                Bank of Albania · Tirana, Albania
+                            </div>
+
+                        </div>
+
+                    </div>
 
                     <div class="ak-talk">
 
